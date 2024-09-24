@@ -179,7 +179,7 @@ export const RESUME_DATA = {
       },
     },
     {
-      title: "Marafiq +",
+      title: "Marafiq+",
       techStack: [
         "React Native",
         "TypeScript",

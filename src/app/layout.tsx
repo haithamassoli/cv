@@ -6,7 +6,7 @@ import "./globals.css";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "Haitham Assoli's CV",
+  title: "Haitham's CV",
   description: "Haitham Assoli's CV",
 };
 
