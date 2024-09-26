@@ -1,4 +1,4 @@
-import { GitHubIcon, LinkedInIcon } from "@/components/icons";
+import { GitHubIcon, LinkedInIcon, PlayStoreIcon } from "@/components/icons";
 
 export const RESUME_DATA = {
   name: "Haitham Assoli",
@@ -25,6 +25,11 @@ export const RESUME_DATA = {
         name: "LinkedIn",
         url: "https://www.linkedin.com/in/haithamassoli/",
         icon: LinkedInIcon,
+      },
+      {
+        name: "PlayStore",
+        url: "play.google.com/store/apps/developer?id=haitham+assoli",
+        icon: PlayStoreIcon,
       },
     ],
   },
