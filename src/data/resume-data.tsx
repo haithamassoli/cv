@@ -11,7 +11,7 @@ export const RESUME_DATA = {
     "I love turning beautiful designs into usable websites that respond to various devices and user contexts and are powered by code that’s just as beautiful, as well as scalable. I always seek perfection to make my projects unique and creative and I do so by keeping my eyes on the new tools, reading articles, and following the right people.",
   avatarUrl:
     "https://avatars.githubusercontent.com/u/74528836?s=400&u=6d3ef2f0aab56016211b826c9457156aee8c8c81&v=4",
-  personalWebsiteUrl: "https://www.linkedin.com/in/haithamassoli/",
+  personalWebsiteUrl: "https://haitham-assoli-resume.vercel.app/",
   contact: {
     email: "haitham.b.assoli@gmail.com",
     tel: "+962775331416",
@@ -31,7 +31,7 @@ export const RESUME_DATA = {
   education: [
     {
       school: "Irbid National University",
-      badges: [""],
+      badges: [],
       degree: "Bachelor's degree, Computer Science - Excellent",
       start: "2022",
       end: "2024",
@@ -49,7 +49,7 @@ export const RESUME_DATA = {
     {
       company: "Freelance",
       link: "",
-      badges: [""],
+      badges: [],
       title: "Web & Mobile FullStack Developer",
       start: "2022",
       end: null,
@@ -59,7 +59,7 @@ export const RESUME_DATA = {
     {
       company: "Repzo inc",
       link: "https://repzo.com/",
-      badges: [""],
+      badges: [],
       title: "Software Engineer",
       start: "2022",
       end: "2023",
@@ -107,8 +107,27 @@ export const RESUME_DATA = {
     "Framer Motion",
     "Figma",
     "Git",
+    "SEO",
   ],
   projects: [
+    {
+      title: "Portfolio",
+      techStack: [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "Framer Motion",
+        "Tailwind CSS",
+        "SEO",
+        "UI/UX",
+      ],
+      description:
+        "Portfolio website showcasing my skills in Web and Mobile FullStack Development.",
+      link: {
+        label: "vercel.app",
+        href: "https://haitham-assoli-portfolio.vercel.app/",
+      },
+    },
     {
       title: "EECommittee",
       techStack: [
