@@ -10,7 +10,7 @@ import { RESUME_DATA } from "@/data/resume-data";
 import { ProjectCard } from "@/components/project-card";
 
 export const metadata: Metadata = {
-  title: "Haitham's CV",
+  title: "Haitham's Resume",
   description: RESUME_DATA.summary,
 };
 
