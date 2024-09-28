@@ -193,6 +193,24 @@ export const RESUME_DATA = {
       },
     },
     {
+      title: "Telescope",
+      techStack: [
+        "React Native",
+        "TypeScript",
+        "Zod",
+        "Firebase",
+        "UI/UX",
+        "React Query",
+        "Reanimated",
+        "Notifications",
+      ],
+      description: "Ajloun Governorate Tourism Service Application",
+      link: {
+        label: "play.google.com",
+        href: "https://play.google.com/store/apps/details?id=com.ajloun.telescope23",
+      },
+    },
+    {
       title: "Azkari",
       techStack: ["Javascript", "VSCode Extension"],
       description:
