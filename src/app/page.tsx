@@ -171,6 +171,45 @@ export default function Page() {
           })}
         </Section>
         <Section>
+          <h2 className="text-xl font-bold">Licenses & Certifications</h2>
+          {RESUME_DATA.certifications.map((certification) => {
+            return (
+              <Card key={certification.title}>
+                <CardHeader>
+                  <div className="flex items-center justify-between gap-x-2 text-base">
+                    <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
+                      <a className="hover:underline" href={certification.link}>
+                        {certification.title}
+                      </a>
+                      <span className="inline-flex gap-x-1">
+                        {certification.badges.map((badge) => (
+                          <Badge
+                            variant="secondary"
+                            className="align-middle text-xs print:px-1 print:py-0.5 print:text-[8px] print:leading-tight"
+                            key={badge}
+                          >
+                            {badge}
+                          </Badge>
+                        ))}
+                      </span>
+                    </h3>
+                    <div className="text-sm tabular-nums text-gray-500">
+                      {certification.date}
+                    </div>
+                  </div>
+
+                  <h4 className="font-mono text-sm leading-none print:text-[12px]">
+                    {certification.organization}
+                  </h4>
+                </CardHeader>
+                <CardContent className="mt-2 text-xs print:text-[10px]">
+                  {certification.description}
+                </CardContent>
+              </Card>
+            );
+          })}
+        </Section>
+        <Section>
           <h2 className="text-xl font-bold">Skills</h2>
           <div className="flex flex-wrap gap-1">
             {RESUME_DATA.skills.map((skill) => {

@@ -51,42 +51,42 @@ export const RESUME_DATA = {
     },
   ],
   certifications: [
-    {
-      title: "AWS DevOps",
-      organization: "Cloud Native Base Camp",
-      description:
-        "Focuses on core database engineering concepts, not SQL or programming. Covers advanced topics such as Indexing, Partitioning, Sharding, Replication, B-trees, Concurrency Control, Database Engines, and Security.",
-      link: "https://media.licdn.com/dms/image/v2/D4E2DAQEMdqFJ-fG1Tg/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1700185915279?e=1728586800&v=beta&t=zngIo0WeaB-MVMmwkq_ugfuGaLnzuvnv0sGjTcPnPfg",
-      date: "Feb 2024",
-      badges: ["24 hours"],
-    },
-    {
-      title: "Data Structures Decode",
-      organization: "Cloud Native Base Camp",
-      description:
-        "Focuses on core database engineering concepts, not SQL or programming. Covers advanced topics such as Indexing, Partitioning, Sharding, Replication, B-trees, Concurrency Control, Database Engines, and Security.",
-      link: "https://media.licdn.com/dms/image/v2/D4E2DAQEMdqFJ-fG1Tg/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1700185915279?e=1728586800&v=beta&t=zngIo0WeaB-MVMmwkq_ugfuGaLnzuvnv0sGjTcPnPfg",
-      date: "Feb 2024",
-      badges: ["24 hours"],
-    },
-    {
-      title: "Algorithms Analysis and Design from scratch",
-      organization: "Cloud Native Base Camp",
-      description:
-        "Focuses on core database engineering concepts, not SQL or programming. Covers advanced topics such as Indexing, Partitioning, Sharding, Replication, B-trees, Concurrency Control, Database Engines, and Security.",
-      link: "https://media.licdn.com/dms/image/v2/D4E2DAQEMdqFJ-fG1Tg/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1700185915279?e=1728586800&v=beta&t=zngIo0WeaB-MVMmwkq_ugfuGaLnzuvnv0sGjTcPnPfg",
-      date: "Feb 2024",
-      badges: ["24 hours"],
-    },
-    {
-      title: "Node.js From Scratch",
-      organization: "Cloud Native Base Camp",
-      description:
-        "Focuses on core database engineering concepts, not SQL or programming. Covers advanced topics such as Indexing, Partitioning, Sharding, Replication, B-trees, Concurrency Control, Database Engines, and Security.",
-      link: "https://media.licdn.com/dms/image/v2/D4E2DAQEMdqFJ-fG1Tg/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1700185915279?e=1728586800&v=beta&t=zngIo0WeaB-MVMmwkq_ugfuGaLnzuvnv0sGjTcPnPfg",
-      date: "Feb 2024",
-      badges: ["24 hours"],
-    },
+    // {
+    //   title: "AWS DevOps",
+    //   organization: "Cloud Native Base Camp",
+    //   description:
+    //     "Focuses on core database engineering concepts, not SQL or programming. Covers advanced topics such as Indexing, Partitioning, Sharding, Replication, B-trees, Concurrency Control, Database Engines, and Security.",
+    //   link: "https://media.licdn.com/dms/image/v2/D4E2DAQEMdqFJ-fG1Tg/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1700185915279?e=1728586800&v=beta&t=zngIo0WeaB-MVMmwkq_ugfuGaLnzuvnv0sGjTcPnPfg",
+    //   date: "Feb 2024",
+    //   badges: ["24 hours"],
+    // },
+    // {
+    //   title: "Data Structures Decode",
+    //   organization: "Cloud Native Base Camp",
+    //   description:
+    //     "Focuses on core database engineering concepts, not SQL or programming. Covers advanced topics such as Indexing, Partitioning, Sharding, Replication, B-trees, Concurrency Control, Database Engines, and Security.",
+    //   link: "https://media.licdn.com/dms/image/v2/D4E2DAQEMdqFJ-fG1Tg/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1700185915279?e=1728586800&v=beta&t=zngIo0WeaB-MVMmwkq_ugfuGaLnzuvnv0sGjTcPnPfg",
+    //   date: "Feb 2024",
+    //   badges: ["24 hours"],
+    // },
+    // {
+    //   title: "Algorithms Analysis and Design from scratch",
+    //   organization: "Cloud Native Base Camp",
+    //   description:
+    //     "Focuses on core database engineering concepts, not SQL or programming. Covers advanced topics such as Indexing, Partitioning, Sharding, Replication, B-trees, Concurrency Control, Database Engines, and Security.",
+    //   link: "https://media.licdn.com/dms/image/v2/D4E2DAQEMdqFJ-fG1Tg/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1700185915279?e=1728586800&v=beta&t=zngIo0WeaB-MVMmwkq_ugfuGaLnzuvnv0sGjTcPnPfg",
+    //   date: "Feb 2024",
+    //   badges: ["24 hours"],
+    // },
+    // {
+    //   title: "Node.js From Scratch",
+    //   organization: "Cloud Native Base Camp",
+    //   description:
+    //     "Focuses on core database engineering concepts, not SQL or programming. Covers advanced topics such as Indexing, Partitioning, Sharding, Replication, B-trees, Concurrency Control, Database Engines, and Security.",
+    //   link: "https://media.licdn.com/dms/image/v2/D4E2DAQEMdqFJ-fG1Tg/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1700185915279?e=1728586800&v=beta&t=zngIo0WeaB-MVMmwkq_ugfuGaLnzuvnv0sGjTcPnPfg",
+    //   date: "Feb 2024",
+    //   badges: ["24 hours"],
+    // },
     {
       title: "Fundamentals of Database Engineering",
       organization: "Udemy",
@@ -175,7 +175,7 @@ export const RESUME_DATA = {
     "React Query",
     "React Native",
     "Next.js",
-    "Node.js",
+    "Framer Motion",
     "NestJS",
     "Express",
     "Php",
@@ -183,10 +183,15 @@ export const RESUME_DATA = {
     "MySQL",
     "Firebase",
     "Tailwind CSS",
-    "Framer Motion",
+    "Node.js",
     "Figma",
     "Git",
     "SEO",
+    "UX",
+    "Linux",
+    "Algorithms",
+    "Data Structures",
+    // "AWS",
   ],
   projects: [
     {
