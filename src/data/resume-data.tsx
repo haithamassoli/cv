@@ -50,6 +50,80 @@ export const RESUME_DATA = {
       end: "2022",
     },
   ],
+  certifications: [
+    {
+      title: "AWS DevOps",
+      organization: "Cloud Native Base Camp",
+      description:
+        "Focuses on core database engineering concepts, not SQL or programming. Covers advanced topics such as Indexing, Partitioning, Sharding, Replication, B-trees, Concurrency Control, Database Engines, and Security.",
+      link: "https://media.licdn.com/dms/image/v2/D4E2DAQEMdqFJ-fG1Tg/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1700185915279?e=1728586800&v=beta&t=zngIo0WeaB-MVMmwkq_ugfuGaLnzuvnv0sGjTcPnPfg",
+      date: "Feb 2024",
+      badges: ["24 hours"],
+    },
+    {
+      title: "Data Structures Decode",
+      organization: "Cloud Native Base Camp",
+      description:
+        "Focuses on core database engineering concepts, not SQL or programming. Covers advanced topics such as Indexing, Partitioning, Sharding, Replication, B-trees, Concurrency Control, Database Engines, and Security.",
+      link: "https://media.licdn.com/dms/image/v2/D4E2DAQEMdqFJ-fG1Tg/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1700185915279?e=1728586800&v=beta&t=zngIo0WeaB-MVMmwkq_ugfuGaLnzuvnv0sGjTcPnPfg",
+      date: "Feb 2024",
+      badges: ["24 hours"],
+    },
+    {
+      title: "Algorithms Analysis and Design from scratch",
+      organization: "Cloud Native Base Camp",
+      description:
+        "Focuses on core database engineering concepts, not SQL or programming. Covers advanced topics such as Indexing, Partitioning, Sharding, Replication, B-trees, Concurrency Control, Database Engines, and Security.",
+      link: "https://media.licdn.com/dms/image/v2/D4E2DAQEMdqFJ-fG1Tg/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1700185915279?e=1728586800&v=beta&t=zngIo0WeaB-MVMmwkq_ugfuGaLnzuvnv0sGjTcPnPfg",
+      date: "Feb 2024",
+      badges: ["24 hours"],
+    },
+    {
+      title: "Node.js From Scratch",
+      organization: "Cloud Native Base Camp",
+      description:
+        "Focuses on core database engineering concepts, not SQL or programming. Covers advanced topics such as Indexing, Partitioning, Sharding, Replication, B-trees, Concurrency Control, Database Engines, and Security.",
+      link: "https://media.licdn.com/dms/image/v2/D4E2DAQEMdqFJ-fG1Tg/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1700185915279?e=1728586800&v=beta&t=zngIo0WeaB-MVMmwkq_ugfuGaLnzuvnv0sGjTcPnPfg",
+      date: "Feb 2024",
+      badges: ["24 hours"],
+    },
+    {
+      title: "Fundamentals of Database Engineering",
+      organization: "Udemy",
+      description:
+        "Focuses on core database engineering concepts, not SQL or programming. Covers advanced topics such as Indexing, Partitioning, Sharding, Replication, B-trees, Concurrency Control, Database Engines, and Security.",
+      link: "https://media.licdn.com/dms/image/v2/D4E2DAQEMdqFJ-fG1Tg/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1700185915279?e=1728586800&v=beta&t=zngIo0WeaB-MVMmwkq_ugfuGaLnzuvnv0sGjTcPnPfg",
+      date: "Feb 2023",
+      badges: ["24 hours"],
+    },
+    {
+      title: "JavaScript Algorithms and Data Structures Masterclass",
+      organization: "Udemy",
+      description:
+        "Comprehensive curriculum covering both foundational and advanced topics such as Big O notation, Algorithms, and Data structures.",
+      link: "https://media.licdn.com/dms/image/v2/D4E2DAQEChtxNRCWn3w/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1700186000489?e=1728590400&v=beta&t=5wMzilkkAwJGWXUAh4Vohf0naIrBxAW400bYm-FlQnU",
+      date: "Feb 2022",
+      badges: ["22 hours"],
+    },
+    {
+      title: "React Native - The Practical Guide",
+      organization: "Udemy",
+      description:
+        "Explore the React Native ecosystem, covering core concepts, responsive design, navigation, and using native components like maps and the camera.",
+      link: "https://www.udemy.com/certificate/UC-28ff8b71-f242-47cd-be59-f8b06b2cc43d/",
+      date: "Apr 2022",
+      badges: ["58 hours"],
+    },
+    {
+      title: "Linux Basics Course",
+      organization: "Flex Courses",
+      description:
+        "Learn essential Linux skills, focusing on Command Line proficiency and system basics for effective use.",
+      link: "https://www.flexcourses.com/certificates/401651095889/view",
+      date: "Apr 2022",
+      badges: ["3 hours"],
+    },
+  ],
   work: [
     {
       company: "Freelance",
@@ -89,7 +163,7 @@ export const RESUME_DATA = {
       start: "2018",
       end: null,
       description:
-        "Collaborated closely with the group to enhance classmates' educational experiences.",
+        "Collaborated closely with the group to enhance classmates educational experiences.",
     },
   ],
   skills: [
