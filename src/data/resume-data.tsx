@@ -69,24 +69,23 @@ export const RESUME_DATA = {
     //   date: "Feb 2024",
     //   badges: ["24 hours"],
     // },
-    // {
-    //   title: "Algorithms Analysis and Design from scratch",
-    //   organization: "Cloud Native Base Camp",
-    //   description:
-    //     "Focuses on core database engineering concepts, not SQL or programming. Covers advanced topics such as Indexing, Partitioning, Sharding, Replication, B-trees, Concurrency Control, Database Engines, and Security.",
-    //   link: "https://media.licdn.com/dms/image/v2/D4E2DAQEMdqFJ-fG1Tg/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1700185915279?e=1728586800&v=beta&t=zngIo0WeaB-MVMmwkq_ugfuGaLnzuvnv0sGjTcPnPfg",
-    //   date: "Feb 2024",
-    //   badges: ["24 hours"],
-    // },
-    // {
-    //   title: "Node.js From Scratch",
-    //   organization: "Cloud Native Base Camp",
-    //   description:
-    //     "Focuses on core database engineering concepts, not SQL or programming. Covers advanced topics such as Indexing, Partitioning, Sharding, Replication, B-trees, Concurrency Control, Database Engines, and Security.",
-    //   link: "https://media.licdn.com/dms/image/v2/D4E2DAQEMdqFJ-fG1Tg/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1700185915279?e=1728586800&v=beta&t=zngIo0WeaB-MVMmwkq_ugfuGaLnzuvnv0sGjTcPnPfg",
-    //   date: "Feb 2024",
-    //   badges: ["24 hours"],
-    // },
+    {
+      title: "Algorithms Analysis and Design from scratch",
+      organization: "Cloud Native Base Camp",
+      description:
+        "Thinking through code before writing it and explore common approaches to coding. This builds a solid foundation for your work.",
+      link: "https://media.licdn.com/dms/image/v2/D4E2DAQHCBWtSwAMnjQ/profile-treasury-document-cover-images_800/profile-treasury-document-cover-images_800/0/1728290255865?e=1728903600&v=beta&t=PXXnJmhoW6dXaSfGtGBvu3-0fk7hiU4ThXsJqt_ZHeI",
+      date: "Oct 2024",
+      badges: [],
+    },
+    {
+      title: "Node.js From Scratch",
+      organization: "Cloud Native Base Camp",
+      description: "How Node.js works behind the scenes",
+      link: "https://cloudnativebasecamp.com/courses/node-js-from-scratch/",
+      date: "Oct 2024",
+      badges: [],
+    },
     {
       title: "Fundamentals of Database Engineering",
       organization: "Udemy",
