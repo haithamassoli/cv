@@ -51,30 +51,30 @@ export const RESUME_DATA = {
     },
   ],
   certifications: [
-    // {
-    //   title: "AWS DevOps",
-    //   organization: "Cloud Native Base Camp",
-    //   description:
-    //     "Focuses on core database engineering concepts, not SQL or programming. Covers advanced topics such as Indexing, Partitioning, Sharding, Replication, B-trees, Concurrency Control, Database Engines, and Security.",
-    //   link: "https://media.licdn.com/dms/image/v2/D4E2DAQEMdqFJ-fG1Tg/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1700185915279?e=1728586800&v=beta&t=zngIo0WeaB-MVMmwkq_ugfuGaLnzuvnv0sGjTcPnPfg",
-    //   date: "Feb 2024",
-    //   badges: ["24 hours"],
-    // },
-    // {
-    //   title: "Data Structures Decode",
-    //   organization: "Cloud Native Base Camp",
-    //   description:
-    //     "Focuses on core database engineering concepts, not SQL or programming. Covers advanced topics such as Indexing, Partitioning, Sharding, Replication, B-trees, Concurrency Control, Database Engines, and Security.",
-    //   link: "https://media.licdn.com/dms/image/v2/D4E2DAQEMdqFJ-fG1Tg/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1700185915279?e=1728586800&v=beta&t=zngIo0WeaB-MVMmwkq_ugfuGaLnzuvnv0sGjTcPnPfg",
-    //   date: "Feb 2024",
-    //   badges: ["24 hours"],
-    // },
+    {
+      title: "AWS DevOps",
+      organization: "Cloud Native Base Camp",
+      description:
+        "Design and implement and operate cloud solutions from ground up.",
+      link: "https://cloudnativebasecamp.com/courses/aws-devops-90/",
+      date: "Sep 2024",
+      badges: [],
+    },
+    {
+      title: "Data Structures Decode",
+      organization: "Cloud Native Base Camp",
+      description:
+        "Learn the basics of data structures and algorithms, including how to use them to solve real-world problems.",
+      link: "https://cloudnativebasecamp.com/courses/ds01/",
+      date: "Oct 2024",
+      badges: [],
+    },
     {
       title: "Algorithms Analysis and Design from scratch",
       organization: "Cloud Native Base Camp",
       description:
         "Thinking through code before writing it and explore common approaches to coding. This builds a solid foundation for your work.",
-      link: "https://media.licdn.com/dms/image/v2/D4E2DAQHCBWtSwAMnjQ/profile-treasury-document-cover-images_800/profile-treasury-document-cover-images_800/0/1728290255865?e=1728903600&v=beta&t=PXXnJmhoW6dXaSfGtGBvu3-0fk7hiU4ThXsJqt_ZHeI",
+      link: "https://raw.githubusercontent.com/haithamassoli/Licenses-Certifications/refs/heads/main/Algorithms%20Analysis%20and%20Design.png",
       date: "Oct 2024",
       badges: [],
     },
@@ -82,7 +82,7 @@ export const RESUME_DATA = {
       title: "Node.js From Scratch",
       organization: "Cloud Native Base Camp",
       description: "How Node.js works behind the scenes",
-      link: "https://cloudnativebasecamp.com/courses/node-js-from-scratch/",
+      link: "https://raw.githubusercontent.com/haithamassoli/Licenses-Certifications/refs/heads/main/Node.js%20From%20Scratch%20Certificate.png",
       date: "Oct 2024",
       badges: [],
     },
@@ -91,7 +91,7 @@ export const RESUME_DATA = {
       organization: "Udemy",
       description:
         "Focuses on core database engineering concepts, not SQL or programming. Covers advanced topics such as Indexing, Partitioning, Sharding, Replication, B-trees, Concurrency Control, Database Engines, and Security.",
-      link: "https://media.licdn.com/dms/image/v2/D4E2DAQEMdqFJ-fG1Tg/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1700185915279?e=1728586800&v=beta&t=zngIo0WeaB-MVMmwkq_ugfuGaLnzuvnv0sGjTcPnPfg",
+      link: "https://raw.githubusercontent.com/haithamassoli/Licenses-Certifications/refs/heads/main/Fundamentals%20of%20Database.jpeg",
       date: "Feb 2023",
       badges: ["24 hours"],
     },
@@ -100,7 +100,7 @@ export const RESUME_DATA = {
       organization: "Udemy",
       description:
         "Comprehensive curriculum covering both foundational and advanced topics such as Big O notation, Algorithms, and Data structures.",
-      link: "https://media.licdn.com/dms/image/v2/D4E2DAQEChtxNRCWn3w/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1700186000489?e=1728590400&v=beta&t=5wMzilkkAwJGWXUAh4Vohf0naIrBxAW400bYm-FlQnU",
+      link: "https://raw.githubusercontent.com/haithamassoli/Licenses-Certifications/refs/heads/main/JavaScript%20Algorithms%20and%20DS.jpeg",
       date: "Feb 2022",
       badges: ["22 hours"],
     },
@@ -179,7 +179,8 @@ export const RESUME_DATA = {
     "Express",
     "Php",
     "Laravel",
-    "MySQL",
+    "SQL",
+    "MongoDB",
     "Firebase",
     "Tailwind CSS",
     "Node.js",
@@ -190,7 +191,11 @@ export const RESUME_DATA = {
     "Linux",
     "Algorithms",
     "Data Structures",
-    // "AWS",
+    "REST API",
+    "Redis",
+    "AWS",
+    "Docker",
+    "DevOps",
   ],
   projects: [
     {
@@ -285,7 +290,7 @@ export const RESUME_DATA = {
       description: "Ajloun Governorate Tourism Service Application",
       link: {
         label: "play.google.com",
-        href: "https://play.google.com/store/apps/details?id=com.ajloun.telescope23",
+        href: "https://play.google.com/store/apps/details?id=com.haithamassoli.telescope",
       },
     },
     {
