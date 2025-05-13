@@ -14,7 +14,7 @@ export const RESUME_DATA = {
   personalWebsiteUrl: "https://haitham-assoli-resume.vercel.app/",
   contact: {
     email: "haitham.b.assoli@gmail.com",
-    tel: "+962775331416",
+    tel: "+962776193666",
     social: [
       {
         name: "GitHub",
@@ -182,6 +182,7 @@ export const RESUME_DATA = {
     "SQL",
     "MongoDB",
     "Firebase",
+    "Supabase",
     "Tailwind CSS",
     "Node.js",
     "Figma",
@@ -214,6 +215,33 @@ export const RESUME_DATA = {
       link: {
         label: "vercel.app",
         href: "https://haitham-assoli-portfolio.vercel.app/",
+      },
+    },
+    {
+      title: "ملعبجي",
+      techStack: [
+        "React Native",
+        "TypeScript",
+        "Zod",
+        "Multi Themes",
+        "In App Purchases",
+        "Google/Apple Login",
+        "Calendars",
+        "Supabase",
+        "React-Hook-Form",
+        "Zustand",
+        "React Query",
+        "Reanimated",
+        "Caching",
+        "Skia",
+        "Restyle",
+        "Notifications",
+        "UI/UX",
+      ],
+      description: "An application for booking stadiums and searching for players",
+      link: {
+        label: "apps.apple.com",
+        href: "https://apps.apple.com/jo/app/%D9%85%D9%84%D8%B9%D8%A8%D8%AC%D9%8A/id6744635501",
       },
     },
     {
