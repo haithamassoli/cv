@@ -286,7 +286,24 @@ export const RESUME_DATA = {
       },
     },
     {
-      title: "Kheir",
+      title: "روح الجوف",
+      techStack: [
+        "React Native",
+        "TypeScript",
+        "i18n",
+        "Firebase",
+        "React Query",
+        "Reanimated",
+        "Splash Screen"
+      ],
+      description: `"Rooh Al-Jouf" is your digital guide to discovering all the details of the Al-Jouf region and its destinations.`,
+      link: {
+        label: "apps.apple.com",
+        href: "https://apps.apple.com/us/app/rooh-al-jouf/id6743066965",
+      },
+    },
+    {
+      title: "خير",
       techStack: [
         "React Native",
         "TypeScript",
@@ -304,11 +321,12 @@ export const RESUME_DATA = {
       },
     },
     {
-      title: "Telescope",
+      title: "منظار",
       techStack: [
         "React Native",
         "TypeScript",
         "Zod",
+        "i18n",
         "Firebase",
         "UI/UX",
         "React Query",
@@ -322,7 +340,7 @@ export const RESUME_DATA = {
       },
     },
     {
-      title: "Azkari",
+      title: "أذكاري",
       techStack: ["Javascript", "VSCode Extension"],
       description:
         "VSCode extension to remind you to remember Allah every now and then.",
@@ -332,7 +350,7 @@ export const RESUME_DATA = {
       },
     },
     {
-      title: "Marafiq+",
+      title: "مرافق+",
       techStack: [
         "React Native",
         "TypeScript",
@@ -352,7 +370,7 @@ export const RESUME_DATA = {
       },
     },
     {
-      title: "Sawt",
+      title: "صوت",
       techStack: [
         "React Native",
         "TypeScript",
