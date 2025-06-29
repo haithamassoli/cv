@@ -28,7 +28,7 @@ export const RESUME_DATA = {
       },
       {
         name: "PlayStore",
-        url: "https://play.google.com/store/apps/developer?id=Haitham+Assoli",
+        url: "https://play.google.com/store/apps/dev?id=6385259170030268414",
         icon: PlayStoreIcon,
       },
     ],
