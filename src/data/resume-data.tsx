@@ -125,6 +125,16 @@ export const RESUME_DATA = {
   ],
   work: [
     {
+      company: "KenSoftware",
+      link: "",
+      badges: [],
+      title: "Front End & Mobile Developer",
+      start: "2025",
+      end: null,
+      description:
+        "Developing and maintaining web and mobile applications, ensuring high performance and responsiveness. Collaborating with designers to implement user-friendly interfaces and optimizing applications for maximum speed and scalability.",
+    },
+    {
       company: "Freelance",
       link: "",
       badges: [],
