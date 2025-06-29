@@ -294,6 +294,24 @@ export const RESUME_DATA = {
       },
     },
     {
+      title: "Hafiz Platform",
+      techStack: [
+        "Next.js",
+        "TypeScript",
+        "Caching",
+        "Server Components",
+        "Zod",
+        "SEO",
+        "Server Actions",
+        "Tailwind CSS",
+      ],
+      description: `Platform where the seller registers, connects him with the customer, and preserves all rights between the two parties.`,
+      link: {
+        label: "hafiz-platform.netlify.app",
+        href: "https://hafiz-platform.netlify.app/",
+      },
+    },
+    {
       title: "روح الجوف",
       techStack: [
         "React Native",
