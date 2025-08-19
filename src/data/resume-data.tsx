@@ -125,14 +125,14 @@ export const RESUME_DATA = {
   ],
   work: [
     {
-      company: "KenSoftware",
-      link: "",
+      company: "Malabji",
+      link: "https://malabji.vercel.app/",
       badges: [],
-      title: "Front End & Mobile Developer",
+      title: "Founder & CEO",
       start: "2025",
       end: null,
       description:
-        "Developing and maintaining web and mobile applications, ensuring high performance and responsiveness. Collaborating with designers to implement user-friendly interfaces and optimizing applications for maximum speed and scalability.",
+        "Search, share, compete, book, enjoy—that's Malabji. An app that makes it simple to look for playgrounds, see which ones are open, and make reservations. Additionally, it lets you look for a team or friends to play with. You can challenge them and compete with them. Additionally, you may start or take part in tournaments. We also offer several sports academies. Accessible for any sport.",
     },
     {
       company: "Freelance",
