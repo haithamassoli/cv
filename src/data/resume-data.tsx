@@ -125,6 +125,16 @@ export const RESUME_DATA = {
   ],
   work: [
     {
+      company: "Bionl.Ai",
+      link: "https://bionl.ai/",
+      badges: ["Remote"],
+      title: "Software Engineer",
+      start: "2025",
+      end: null,
+      description:
+        "Developed bioinformatics applications using React and React Native in a monorepo architecture. Built type-safe solutions with TypeScript, Zod, Prisma, and TanStack Query. Contributed to a no-code platform serving 8,000+ researchers with GenAI-powered data analysis and bioinformatics pipeline features. Ensured HIPAA, GDPR, and SOC2 Type 2 compliance standards.",
+    },
+    {
       company: "Malabji",
       link: "https://malabji.vercel.app/",
       badges: [],
