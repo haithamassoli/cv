@@ -56,6 +56,7 @@ export const CommandMenu = ({ links }: Props) => {
           <CommandEmpty>No results found.</CommandEmpty>
           <CommandGroup heading="Actions">
             <CommandItem
+              value="print"
               onSelect={() => {
                 setOpen(false);
                 window.print();
@@ -68,6 +69,7 @@ export const CommandMenu = ({ links }: Props) => {
             {links.map(({ url, title }) => (
               <CommandItem
                 key={url}
+                value={`${title} ${url}`}
                 onSelect={() => {
                   setOpen(false);
                   window.open(url, "_blank");

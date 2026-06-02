@@ -125,12 +125,22 @@ export const RESUME_DATA = {
   ],
   work: [
     {
+      company: "CartBuzz",
+      link: "https://www.linkedin.com/company/cartbuzz/",
+      badges: [],
+      title: "Software Engineer",
+      start: "2026",
+      end: null,
+      description:
+        "Building scalable multi-vendor e-commerce solutions with NestJS, Next.js, and React Native. Working on high-performance backend services, responsive web experiences, and mobile applications designed for speed, reliability, and growth.",
+    },
+    {
       company: "Bionl.Ai",
       link: "https://bionl.ai/",
       badges: ["Remote"],
       title: "Software Engineer",
       start: "2025",
-      end: null,
+      end: "2026",
       description:
         "Developed bioinformatics applications using React and React Native in a monorepo architecture. Built type-safe solutions with TypeScript, Zod, Prisma, and TanStack Query. Contributed to a no-code platform serving 8,000+ researchers with GenAI-powered data analysis and bioinformatics pipeline features. Ensured HIPAA, GDPR, and SOC2 Type 2 compliance standards.",
     },
@@ -259,6 +269,28 @@ export const RESUME_DATA = {
       link: {
         label: "apps.apple.com",
         href: "https://apps.apple.com/jo/app/%D9%85%D9%84%D8%B9%D8%A8%D8%AC%D9%8A/id6744635501",
+      },
+    },
+    {
+      title: "عون",
+      techStack: [
+        "Next.js",
+        "TypeScript",
+        "React",
+        "Convex",
+        "TanStack Form",
+        "TanStack Table",
+        "Tiptap",
+        "Recharts",
+        "PostHog",
+        "Tailwind CSS",
+        "PWA",
+      ],
+      description:
+        "A free academic resources platform for Jordanian university students, bringing summaries, exams, course materials, bookmarks, planning tools, and study utilities into one place.",
+      link: {
+        label: "aoun.assoli.site",
+        href: "https://aoun.assoli.site/",
       },
     },
     {
