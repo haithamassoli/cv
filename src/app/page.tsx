@@ -10,7 +10,7 @@ import { RESUME_DATA } from "@/data/resume-data";
 import { ProjectCard } from "@/components/project-card";
 
 // ponytail: projects past this index are web-only, so print stays at 3 pages.
-const PRINT_PROJECT_LIMIT = 12;
+const PRINT_PROJECT_LIMIT = 15;
 
 export const metadata: Metadata = {
   title: "Haitham's Resume",
@@ -19,12 +19,12 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <main className="container relative mx-auto scroll-my-12 overflow-auto p-4 md:p-16 print:p-12">
-      <section className="mx-auto w-full max-w-2xl space-y-8 bg-white print:space-y-4">
+    <main className="container relative mx-auto scroll-my-12 overflow-auto p-4 md:p-16 print:px-10 print:py-0">
+      <section className="mx-auto w-full max-w-2xl space-y-8 bg-white print:space-y-3">
         <div className="flex items-center justify-between">
           <div className="flex-1 space-y-1.5">
-            <h1 className="text-2xl font-bold">{RESUME_DATA.name}</h1>
-            <p className="max-w-md text-pretty font-mono text-sm text-muted-foreground print:text-[12px]">
+            <h1 className="text-2xl font-bold print:text-xl">{RESUME_DATA.name}</h1>
+            <p className="max-w-md text-pretty font-mono text-sm text-muted-foreground print:text-[11px] print:leading-snug">
               {RESUME_DATA.about}
             </p>
             <p className="max-w-md items-center text-pretty font-mono text-xs text-muted-foreground">
@@ -96,18 +96,18 @@ export default function Page() {
           </Avatar>
         </div>
         <Section>
-          <h2 className="text-xl font-bold">About</h2>
-          <p className="text-pretty font-mono text-sm text-muted-foreground print:text-[12px]">
+          <h2 className="text-xl font-bold print:text-lg">About</h2>
+          <p className="text-pretty font-mono text-sm text-muted-foreground print:text-[11px] print:leading-snug">
             {RESUME_DATA.summary}
           </p>
         </Section>
         <Section>
-          <h2 className="text-xl font-bold">Work Experience</h2>
+          <h2 className="text-xl font-bold print:text-lg">Work Experience</h2>
           {RESUME_DATA.work.map((work) => {
             return (
               <Card key={work.company}>
                 <CardHeader>
-                  <div className="flex items-center justify-between gap-x-2 text-base">
+                  <div className="flex items-center justify-between gap-x-2 text-base print:text-sm">
                     <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
                       <a
                         className="hover:underline"
@@ -128,29 +128,29 @@ export default function Page() {
                         ))}
                       </span>
                     </h3>
-                    <div className="text-sm tabular-nums text-gray-500">
+                    <div className="text-sm tabular-nums text-gray-500 print:text-[10px]">
                       {work.start} - {work.end ?? "Present"}
                     </div>
                   </div>
 
-                  <h4 className="font-mono text-sm leading-none print:text-[12px]">
+                  <h4 className="font-mono text-sm leading-none print:text-[11px]">
                     {work.title}
                   </h4>
                 </CardHeader>
-                <CardContent className="mt-2 text-xs print:text-[10px]">
+                <CardContent className="mt-1 text-xs print:text-[10.5px] print:leading-snug">
                   {work.description}
                 </CardContent>
               </Card>
             );
           })}
         </Section>
-        <Section>
-          <h2 className="text-xl font-bold">Education</h2>
+        <Section className="print:break-before-page">
+          <h2 className="text-xl font-bold print:text-lg">Education</h2>
           {RESUME_DATA.education.map((education) => {
             return (
               <Card key={education.school}>
                 <CardHeader>
-                  <div className="flex items-center justify-between gap-x-2 text-base">
+                  <div className="flex items-center justify-between gap-x-2 text-base print:text-sm">
                     <h3 className="font-semibold leading-none">
                       {education.school}
                       <span className="inline-flex gap-x-1">
@@ -165,12 +165,12 @@ export default function Page() {
                         ))}
                       </span>
                     </h3>
-                    <div className="text-sm tabular-nums text-gray-500">
+                    <div className="text-sm tabular-nums text-gray-500 print:text-[10px]">
                       {education.start} - {education.end}
                     </div>
                   </div>
                 </CardHeader>
-                <CardContent className="mt-2 print:text-[12px]">
+                <CardContent className="mt-1 print:text-[10px]">
                   {education.degree}
                 </CardContent>
               </Card>
@@ -178,12 +178,12 @@ export default function Page() {
           })}
         </Section>
         <Section>
-          <h2 className="text-xl font-bold">Licenses & Certifications</h2>
+          <h2 className="text-xl font-bold print:text-lg">Licenses & Certifications</h2>
           {RESUME_DATA.certifications.map((certification) => {
             return (
               <Card key={certification.title}>
                 <CardHeader>
-                  <div className="flex items-center justify-between gap-x-2 text-base">
+                  <div className="flex items-center justify-between gap-x-2 text-base print:text-sm">
                     <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
                       <a
                         className="hover:underline"
@@ -204,16 +204,16 @@ export default function Page() {
                         ))}
                       </span>
                     </h3>
-                    <div className="text-sm tabular-nums text-gray-500">
+                    <div className="text-sm tabular-nums text-gray-500 print:text-[10px]">
                       {certification.date}
                     </div>
                   </div>
 
-                  <h4 className="font-mono text-sm leading-none print:text-[12px]">
+                  <h4 className="font-mono text-sm leading-none print:text-[11px]">
                     {certification.organization}
                   </h4>
                 </CardHeader>
-                <CardContent className="mt-2 text-xs print:text-[10px]">
+                <CardContent className="mt-1 text-xs print:text-[10.5px] print:leading-snug">
                   {certification.description}
                 </CardContent>
               </Card>
@@ -221,7 +221,7 @@ export default function Page() {
           })}
         </Section>
         <Section>
-          <h2 className="text-xl font-bold">Skills</h2>
+          <h2 className="text-xl font-bold print:text-lg">Skills</h2>
           <div className="flex flex-wrap gap-1">
             {RESUME_DATA.skills.map((skill) => {
               return (
@@ -233,8 +233,8 @@ export default function Page() {
           </div>
         </Section>
 
-        <Section className="scroll-mb-16">
-          <h2 className="text-xl font-bold">Projects</h2>
+        <Section className="scroll-mb-16 print:break-before-page">
+          <h2 className="text-xl font-bold print:text-lg">Projects</h2>
           <div className="-mx-3 grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3 print:grid-cols-3 print:gap-2">
             {RESUME_DATA.projects.map((project, index) => {
               return (
