@@ -125,8 +125,8 @@ export const RESUME_DATA = {
   ],
   work: [
     {
-      company: "CartBuzz",
-      link: "https://www.linkedin.com/company/cartbuzz/",
+      company: "GoldenTik",
+      link: "https://www.linkedin.com/company/goldentik/",
       badges: [],
       title: "Software Engineer",
       start: "2026",
