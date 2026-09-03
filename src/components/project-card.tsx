@@ -6,17 +6,30 @@ import {
   CardTitle,
 } from "./ui/card";
 import { Badge } from "./ui/badge";
+import { cn } from "@/lib/utils";
 
 interface Props {
   title: string;
   description: string;
   tags: readonly string[];
   link?: string;
+  className?: string;
 }
 
-export function ProjectCard({ title, description, tags, link }: Props) {
+export function ProjectCard({
+  title,
+  description,
+  tags,
+  link,
+  className,
+}: Props) {
   return (
-    <Card className="flex flex-col overflow-hidden border border-muted p-3">
+    <Card
+      className={cn(
+        "flex flex-col overflow-hidden border border-muted p-3",
+        className,
+      )}
+    >
       <CardHeader className="">
         <div className="space-y-1">
           <CardTitle className="text-base">

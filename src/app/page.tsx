@@ -9,6 +9,9 @@ import { Button } from "@/components/ui/button";
 import { RESUME_DATA } from "@/data/resume-data";
 import { ProjectCard } from "@/components/project-card";
 
+// ponytail: projects past this index are web-only, so print stays at 3 pages.
+const PRINT_PROJECT_LIMIT = 12;
+
 export const metadata: Metadata = {
   title: "Haitham's Resume",
   description: RESUME_DATA.summary,
@@ -230,10 +233,10 @@ export default function Page() {
           </div>
         </Section>
 
-        <Section className="print-force-new-page scroll-mb-16">
+        <Section className="scroll-mb-16">
           <h2 className="text-xl font-bold">Projects</h2>
           <div className="-mx-3 grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3 print:grid-cols-3 print:gap-2">
-            {RESUME_DATA.projects.map((project) => {
+            {RESUME_DATA.projects.map((project, index) => {
               return (
                 <ProjectCard
                   key={project.title}
@@ -241,6 +244,9 @@ export default function Page() {
                   description={project.description}
                   tags={project.techStack}
                   link={"link" in project ? project.link.href : undefined}
+                  className={
+                    index >= PRINT_PROJECT_LIMIT ? "print:hidden" : undefined
+                  }
                 />
               );
             })}

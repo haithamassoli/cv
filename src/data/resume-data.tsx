@@ -230,49 +230,7 @@ export const RESUME_DATA = {
   ],
   projects: [
     {
-      title: "Portfolio",
-      techStack: [
-        "React",
-        "Next.js",
-        "TypeScript",
-        "Framer Motion",
-        "Tailwind CSS",
-        "SEO",
-        "UI/UX",
-      ],
-      description:
-        "Portfolio website showcasing my skills in Web and Mobile FullStack Development.",
-      link: {
-        label: "vercel.app",
-        href: "https://haitham-assoli-portfolio.vercel.app/",
-      },
-    },
-    {
-      title: "ملعبجي",
-      techStack: [
-        "React Native",
-        "TypeScript",
-        "Expo Router",
-        "Deep Linking",
-        "In App Purchases",
-        "Calendars",
-        "React-Hook-Form / Zod",
-        "UI/UX",
-        "Supabase",
-        "Zustand",
-        "React Query",
-        "Reanimated",
-        "Notifications",
-      ],
-      description:
-        "An application for booking stadiums and searching for players",
-      link: {
-        label: "apps.apple.com",
-        href: "https://apps.apple.com/jo/app/%D9%85%D9%84%D8%B9%D8%A8%D8%AC%D9%8A/id6744635501",
-      },
-    },
-    {
-      title: "عون",
+      title: "Aoun",
       techStack: [
         "Next.js",
         "TypeScript",
@@ -280,59 +238,477 @@ export const RESUME_DATA = {
         "Convex",
         "TanStack Form",
         "TanStack Table",
-        "Tiptap",
-        "Recharts",
-        "PostHog",
-        "Tailwind CSS",
-        "PWA",
       ],
       description:
-        "A free academic resources platform for Jordanian university students, bringing summaries, exams, course materials, bookmarks, planning tools, and study utilities into one place.",
+        "A free academic platform for Jordanian university students.",
       link: {
         label: "aoun.assoli.site",
-        href: "https://aoun.assoli.site/",
+        href: "https://aoun.assoli.site",
+      },
+    },
+    {
+      title: "Kashaf Abi Ja'far",
+      techStack: [
+        "Astro",
+        "TypeScript",
+        "Meilisearch",
+        "Whisper ASR",
+        "Tailwind CSS",
+      ],
+      description:
+        "Search thousands of hours of lessons and land on the exact second.",
+      link: {
+        label: "alkulify.assoli.site",
+        href: "https://alkulify.assoli.site",
+      },
+    },
+    {
+      title: "pastehtml",
+      techStack: ["Next.js", "TypeScript", "Convex", "MCP", "Tailwind CSS"],
+      description: "Drop an HTML file, get a public URL on its own origin.",
+      link: {
+        label: "pastehtml.assoli.site",
+        href: "https://pastehtml.assoli.site",
+      },
+    },
+    {
+      title: "Gift",
+      techStack: [
+        "Next.js 16",
+        "React Three Fiber",
+        "drei",
+        "Convex",
+        "Tailwind CSS",
+        "Turbopack",
+      ],
+      description: "Animated 3D gifts you send as a link.",
+      link: {
+        label: "gift.assoli.site",
+        href: "https://gift.assoli.site",
+      },
+    },
+    {
+      title: "TeleStream",
+      techStack: ["Next.js", "TypeScript", "Telegram API", "Tailwind CSS"],
+      description: "Read every Telegram channel you follow as one timeline.",
+      link: {
+        label: "tele-timeline.vercel.app",
+        href: "https://tele-timeline.vercel.app",
+      },
+    },
+    {
+      title: "Malabji",
+      techStack: [
+        "React Native",
+        "Expo Router",
+        "TypeScript",
+        "Supabase",
+        "Zustand",
+        "React Query",
+      ],
+      description: "Find a pitch, find players, book it, play.",
+      link: {
+        label: "malabji.vercel.app",
+        href: "https://malabji.vercel.app",
+      },
+    },
+    {
+      title: "Naqi: Halal Video Filter",
+      techStack: [
+        "Kotlin",
+        "Swift",
+        "ONNX Runtime",
+        "MediaCodec",
+        "OpenGL ES",
+        "AVFoundation",
+      ],
+      description:
+        "Strips music and censors imagery in a video, entirely on your device.",
+      link: {
+        label: "play.google.com",
+        href: "https://play.google.com/store/apps/details?id=com.haithamassoli.naqi",
       },
     },
     {
       title: "EECommittee",
       techStack: [
         "React Native",
+        "Expo",
         "TypeScript",
-        "Zod",
-        "React Navigation",
         "Firebase",
         "Zustand",
         "React Query",
-        "Reanimated",
-        "Caching",
       ],
-      description: "Application for serving electrical engineering students.",
+      description:
+        "Every resource an electrical engineering student needs, in one place.",
       link: {
         label: "play.google.com",
         href: "https://play.google.com/store/apps/details?id=com.haithamassoli.EECommitte",
       },
     },
     {
-      title: "Majalis",
+      title: "Tawsilah Abshir",
+      techStack: [
+        "React Native",
+        "Expo",
+        "TypeScript",
+        "Maps",
+        "Push Notifications",
+        "React Query",
+      ],
+      description: "Ride-hailing built for Ajloun, not adapted to it.",
+      link: {
+        label: "play.google.com",
+        href: "https://play.google.com/store/apps/details?id=com.assoliindustries.tawsilah",
+      },
+    },
+    {
+      title: "Azkari / Dhikr",
+      techStack: ["JavaScript", "Swift", "SwiftUI", "Kotlin", "C#", "WPF"],
+      description:
+        "One remembrance, every so often, on whichever screen you are at.",
+      link: {
+        label: "dhikr.assoli.site",
+        href: "https://dhikr.assoli.site",
+      },
+    },
+    {
+      title: "cv.assoli.site",
+      techStack: ["Next.js", "TypeScript", "React", "Tailwind CSS", "SEO"],
+      description: "My web résumé: dense, scannable, and printable as-is.",
+      link: {
+        label: "cv.assoli.site",
+        href: "https://cv.assoli.site",
+      },
+    },
+    {
+      title: "Almadrsa",
+      techStack: ["Next.js", "TypeScript", "React", "Tailwind CSS", "RTL"],
+      description: "An e-learning platform for schools.",
+      link: {
+        label: "almadrsa.vercel.app",
+        href: "https://almadrsa.vercel.app",
+      },
+    },
+    {
+      title: "Fazawwijuhu",
+      techStack: [
+        "Next.js 16",
+        "React 19",
+        "TypeScript",
+        "Convex",
+        "Better Auth",
+        "Tailwind v4",
+      ],
+      description: "A supervised platform for lawful marriage introductions.",
+      link: {
+        label: "fazuwjuh.vercel.app",
+        href: "https://fazuwjuh.vercel.app",
+      },
+    },
+    {
+      title: "Al-Tibyan Educational Center",
       techStack: [
         "React Native",
         "TypeScript",
-        "Zod",
         "Firebase",
         "Zustand",
         "React Query",
         "Reanimated",
-        "Caching",
-        "Skia",
-        "Restyle",
-        "Notifications",
-        "UI/UX",
       ],
-      description:
-        "An application for reciting and organizing the memorization of the Quran.",
+      description: "Quran memorisation circles, run properly on a phone.",
       link: {
         label: "play.google.com",
-        href: "https://play.google.com/store/apps/details?id=com.haithamassoli.majalisquran",
+        href: "https://play.google.com/store/apps/details?id=com.haithamassoli.majalis",
+      },
+    },
+    {
+      title: "DevCards",
+      techStack: [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "localStorage",
+        "Leitner scheduling",
+      ],
+      description: "Spaced-repetition flashcards for engineering interviews.",
+      link: {
+        label: "flashcards.assoli.site",
+        href: "https://flashcards.assoli.site",
+      },
+    },
+    {
+      title: "Hadanati",
+      techStack: ["Next.js", "TypeScript", "React", "Tailwind CSS", "RTL"],
+      description:
+        "Run a nursery: attendance, assessments, fees and a parent portal.",
+      link: {
+        label: "hadanati.assoli.site",
+        href: "https://hadanati.assoli.site",
+      },
+    },
+    {
+      title: "Hirfati",
+      techStack: [
+        "Next.js",
+        "TypeScript",
+        "React",
+        "Tailwind CSS",
+        "SEO",
+        "RTL",
+      ],
+      description: "Find a trusted tradesperson in Jordan and get free quotes.",
+      link: {
+        label: "hirfati-jo.vercel.app",
+        href: "https://hirfati-jo.vercel.app",
+      },
+    },
+    {
+      title: "Service",
+      techStack: ["Next.js", "TypeScript", "React", "Tailwind CSS", "RTL"],
+      description: "Post a trip or book a seat between Jordan's governorates.",
+      link: {
+        label: "sarfees.vercel.app",
+        href: "https://sarfees.vercel.app",
+      },
+    },
+    {
+      title: "Ghurza",
+      techStack: ["Next.js", "TypeScript", "Tailwind CSS", "RTL", "SEO"],
+      description: "Learn crochet in Arabic, from the first stitch upward.",
+      link: {
+        label: "crochet.assoli.site",
+        href: "https://crochet.assoli.site",
+      },
+    },
+    {
+      title: "Hijabk",
+      techStack: [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "RTL",
+        "SEO",
+        "WhatsApp ordering",
+      ],
+      description:
+        "A Jordanian atelier for khimars and abayas, ordered over WhatsApp.",
+      link: {
+        label: "7jabk.vercel.app",
+        href: "https://7jabk.vercel.app",
+      },
+    },
+    {
+      title: "Rooh Al-Jouf",
+      techStack: [
+        "React Native",
+        "Expo Router",
+        "TypeScript",
+        "i18n",
+        "Firebase",
+        "React Query",
+      ],
+      description:
+        "A digital guide to the Al-Jouf region and everything in it.",
+      link: {
+        label: "apps.apple.com",
+        href: "https://apps.apple.com/us/app/rooh-al-jouf/id6743066965",
+      },
+    },
+    {
+      title: "assoli.site",
+      techStack: [
+        "Next.js",
+        "TypeScript",
+        "React",
+        "Framer Motion",
+        "Tailwind CSS",
+        "SEO",
+      ],
+      description:
+        "My previous portfolio: one animated page, driven by a command menu.",
+      link: {
+        label: "assoli.site",
+        href: "https://assoli.site",
+      },
+    },
+    {
+      title: "FeedGram",
+      techStack: ["Next.js", "TypeScript", "Tailwind CSS"],
+      description: "Follow public Telegram channels without an account.",
+      link: {
+        label: "github.com",
+        href: "https://github.com/haithamassoli/telegram-feed",
+      },
+    },
+    {
+      title: "Sada",
+      techStack: [
+        "JavaScript",
+        "Manifest V3",
+        "transformers.js",
+        "NLLB-200",
+        "WebGPU",
+        "WASM",
+      ],
+      description:
+        "Arabic subtitles for English YouTube, translated on your device.",
+      link: {
+        label: "github.com",
+        href: "https://github.com/haithamassoli/sada",
+      },
+    },
+    {
+      title: "Mubah",
+      techStack: [
+        "Python",
+        "uv",
+        "ffmpeg",
+        "yt-dlp",
+        "Apple Silicon / MPS",
+        "Stem separation",
+      ],
+      description: "Turn any video into a permissible copy, on your own Mac.",
+      link: {
+        label: "github.com",
+        href: "https://github.com/haithamassoli/mubah",
+      },
+    },
+    {
+      title: "Ghadd",
+      techStack: [
+        "Kotlin",
+        "Android Accessibility Service",
+        "ONNX Runtime",
+        "NudeNet v3",
+        "YOLOv8n",
+      ],
+      description: "System-wide on-device image filtering for Android.",
+      link: {
+        label: "github.com",
+        href: "https://github.com/haithamassoli/haramblur",
+      },
+    },
+    {
+      title: "Horizon",
+      techStack: [
+        "Electron",
+        "TypeScript",
+        "React",
+        "electron-vite",
+        "Vitest",
+        "Native bridges",
+      ],
+      description:
+        "Eye breaks that know when you are actually at the computer.",
+      link: {
+        label: "github.com",
+        href: "https://github.com/haithamassoli/horizon",
+      },
+    },
+    {
+      title: "Marafiq Plus",
+      techStack: [
+        "React Native",
+        "Expo Router",
+        "TypeScript",
+        "Google Maps",
+        "Firebase",
+        "Zustand",
+      ],
+      description:
+        "Find every park and public facility in Amman, and report what is broken.",
+      link: {
+        label: "play.google.com",
+        href: "https://play.google.com/store/apps/details?id=com.haithamassoli.hadiqa",
+      },
+    },
+    {
+      title: "Discover Ajloun",
+      techStack: [
+        "React Native",
+        "TypeScript",
+        "i18n",
+        "Firebase",
+        "React Query",
+        "Reanimated",
+      ],
+      description:
+        "Tourism and municipal complaints for Ajloun Governorate, in one app.",
+      link: {
+        label: "play.google.com",
+        href: "https://play.google.com/store/apps/details?id=com.haithamassoli.telescope",
+      },
+    },
+    {
+      title: "Sawt",
+      techStack: [
+        "React Native",
+        "TypeScript",
+        "OTP verification",
+        "Firebase",
+        "Zustand",
+        "React Query",
+      ],
+      description: "Automating an election, from voting to results.",
+      link: {
+        label: "play.google.com",
+        href: "https://play.google.com/store/apps/details?id=com.haithamassoli.sawt",
+      },
+    },
+    {
+      title: "Kheir",
+      techStack: [
+        "React Native",
+        "Expo Router",
+        "TypeScript",
+        "Firebase",
+        "Zustand",
+        "React Query",
+      ],
+      description: "Donate directly to people in need.",
+      link: {
+        label: "github.com",
+        href: "https://github.com/haithamassoli/kheir",
+      },
+    },
+    {
+      title: "Halal Camera",
+      techStack: [
+        "Kotlin",
+        "Swift",
+        "On-device face detection",
+        "CameraX",
+        "AVFoundation",
+      ],
+      description: "A camera that blurs faces the moment you shoot.",
+      link: {
+        label: "play.google.com",
+        href: "https://play.google.com/store/apps/details?id=com.haithamassoli.halalcamera",
+      },
+    },
+    {
+      title: "Al-Manal",
+      techStack: ["JavaScript", "Next.js", "Scheduling logic", "RTL"],
+      description: "Find a substitute teacher before the bell rings.",
+      link: {
+        label: "school-teacher-substitution-finder.vercel.app",
+        href: "https://school-teacher-substitution-finder.vercel.app",
+      },
+    },
+    {
+      title: "Wedding Invitation",
+      techStack: [
+        "Next.js",
+        "TypeScript",
+        "Framer Motion",
+        "Tailwind CSS",
+        "RTL",
+      ],
+      description: "A wedding invitation that lives at a link.",
+      link: {
+        label: "h-wedding.assoli.site",
+        href: "https://h-wedding.assoli.site",
       },
     },
     {
@@ -340,194 +716,80 @@ export const RESUME_DATA = {
       techStack: [
         "Next.js",
         "TypeScript",
-        "Caching",
         "Server Components",
-        "Zod",
-        "SEO",
         "Server Actions",
+        "Zod",
         "Tailwind CSS",
       ],
-      description: `Platform where the seller registers, connects him with the customer, and preserves all rights between the two parties.`,
+      description:
+        "An escrow-style platform that protects both sides of a sale.",
       link: {
         label: "hafiz-platform.netlify.app",
-        href: "https://hafiz-platform.netlify.app/",
+        href: "https://hafiz-platform.netlify.app",
       },
     },
     {
-      title: "روح الجوف",
+      title: "nomusic",
       techStack: [
-        "React Native",
-        "TypeScript",
-        "i18n",
-        "Expo Router",
-        "Deep Linking",
-        "Firebase",
-        "React Query",
-        "Reanimated",
-        "Splash Screen",
+        "Python",
+        "Audio source separation",
+        "Apple Silicon / MPS",
+        "CUDA",
+        "yt-dlp",
       ],
-      description: `Rooh Al-Jouf is your digital guide to discovering all the details of the Al-Jouf region and its destinations.`,
+      description: "Watch YouTube and Facebook videos without the music.",
       link: {
-        label: "apps.apple.com",
-        href: "https://apps.apple.com/us/app/rooh-al-jouf/id6743066965",
+        label: "github.com",
+        href: "https://github.com/haithamassoli/nomusic",
       },
     },
     {
-      title: "خير",
+      title: "cohere-transcribe",
+      techStack: [
+        "Python",
+        "Silero VAD",
+        "GPU batching",
+        "SRT / VTT",
+        "Hugging Face",
+      ],
+      description:
+        "High-throughput Arabic/English transcription, batched properly.",
+      link: {
+        label: "github.com",
+        href: "https://github.com/AliOsm/cohere-transcribe",
+      },
+    },
+    {
+      title: "T3 Code",
+      techStack: ["TypeScript", "React", "React Native", "Electron"],
+      description: "Control the coding agents on your machine, from anywhere.",
+      link: {
+        label: "t3.codes",
+        href: "https://t3.codes",
+      },
+    },
+    {
+      title: "Recruiter Connector",
       techStack: [
         "React Native",
         "TypeScript",
-        "Zod",
-        "Firebase",
-        "Zustand",
-        "React Query",
-        "Reanimated",
-        "Restyle",
+        "Real-time chat",
+        "Push Notifications",
       ],
-      description: "An application to donate to the needy and help them.",
+      description: "A marketplace where recruiters trade candidate profiles.",
       link: {
         label: "play.google.com",
-        href: "https://play.google.com/store/apps/details?id=com.haithamassoli.kheir",
+        href: "https://play.google.com/store/apps/details?id=com.ofi.recruiter_new",
       },
     },
     {
-      title: "منظار",
-      techStack: [
-        "React Native",
-        "TypeScript",
-        "Zod",
-        "i18n",
-        "Firebase",
-        "UI/UX",
-        "React Query",
-        "Reanimated",
-        "Notifications",
-      ],
-      description: "Ajloun Governorate Tourism Service Application",
-      link: {
-        label: "play.google.com",
-        href: "https://play.google.com/store/apps/details?id=com.haithamassoli.telescope",
-      },
-    },
-    {
-      title: "أذكاري",
-      techStack: ["Javascript", "VSCode Extension"],
+      title: "Tafrigh",
+      techStack: ["Python", "Whisper", "wit.ai", "SRT / VTT"],
       description:
-        "VSCode extension to remind you to remember Allah every now and then.",
+        "Transcribe Arabic audio and generate SRT and VTT subtitles.",
       link: {
-        label: "marketplace.visualstudio.com",
-        href: "https://marketplace.visualstudio.com/items?itemName=HaithamAssoli.azkari",
-      },
-    },
-    {
-      title: "مرافق+",
-      techStack: [
-        "React Native",
-        "TypeScript",
-        "Google Maps",
-        "Zod",
-        "Firebase",
-        "Zustand",
-        "React Query",
-        "Reanimated",
-        "Restyle",
-      ],
-      description:
-        "An application that helps you find parks and public facilities.",
-      link: {
-        label: "play.google.com",
-        href: "https://play.google.com/store/apps/details?id=com.haithamassoli.hadiqa",
-      },
-    },
-    {
-      title: "صوت",
-      techStack: [
-        "React Native",
-        "TypeScript",
-        "OTP",
-        "Zod",
-        "Firebase",
-        "Zustand",
-        "React Query",
-        "Reanimated",
-        "Restyle",
-      ],
-      description:
-        "Implementing an innovative technological solution that aims to automate and facilitate election processes.",
-      link: {
-        label: "play.google.com",
-        href: "https://play.google.com/store/apps/details?id=com.haithamassoli.sawt",
-      },
-    },
-    {
-      title: "Boost Me",
-      techStack: [
-        "Javascript",
-        "React",
-        "Php",
-        "Laravel",
-        "MySQL",
-        "Tailwind CSS",
-      ],
-      description:
-        "Book a professional player to help you perform difficult tasks in games.",
-      link: {
-        label: "github.com",
-        href: "https://github.com/haithamassoli/Boost-me",
-      },
-    },
-    {
-      title: "Online Quizzes",
-      techStack: ["Javascript", "Php", "Laravel", "MySQL", "API", "Sass"],
-      description: "Website for managing and performing online exams.",
-      link: {
-        label: "github.com",
-        href: "https://github.com/haithamassoli/Online-Quiz-Laravel",
-      },
-    },
-    {
-      title: "Booking System",
-      techStack: [
-        "Javascript",
-        "React",
-        "Node.Js",
-        "Express",
-        "MongoDB",
-        "Tailwind CSS",
-      ],
-      description: "Restaurant table reservation system.",
-      link: {
-        label: "github.com",
-        href: "https://github.com/haithamassoli/Booking-System",
-      },
-    },
-    {
-      title: "Coza Store",
-      techStack: ["Javascript", "Php", "MySQL", "Sass"],
-      description: "Online store for the latest clothes and accessories.",
-      link: {
-        label: "github.com",
-        href: "https://github.com/haithamassoli/Coza-Store-PHP",
-      },
-    },
-    {
-      title: "Food Funday Restaurant",
-      techStack: ["Javascript", "React", "Tailwind CSS", "Sass"],
-      description:
-        "A system for reserving a restaurant table with food or taking the order upon arrival at the restaurant.",
-      link: {
-        label: "github.com",
-        href: "https://github.com/haithamassoli/Food-Funday-Restaurant",
-      },
-    },
-    {
-      title: "Amazon Clone",
-      techStack: ["Javascript", "React", "Firebase", "MUI"],
-      description:
-        "E-commerce replicates the familiar layout and design of Amazon, allowing users to browse and purchase products.",
-      link: {
-        label: "github.com",
-        href: "https://github.com/haithamassoli/Amazon-Clone",
+        label: "tafrigh.ieasybooks.com",
+        href: "https://tafrigh.ieasybooks.com",
       },
     },
   ],
