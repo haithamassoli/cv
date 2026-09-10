@@ -9,11 +9,39 @@ import { Button } from "@/components/ui/button";
 import { RESUME_DATA } from "@/data/resume-data";
 import { ProjectCard } from "@/components/project-card";
 
-// ponytail: projects past this index are web-only, so print stays at 3 pages.
-const PRINT_PROJECT_LIMIT = 21;
+const SELECTED_PROJECT_TITLES = new Set([
+  "Little Muslim",
+  "Sitr",
+  "Aoun",
+  "Kashaf Abi Ja'far",
+  "pastehtml",
+  "Gift",
+  "TeleStream",
+  "Malabji",
+  "Naqi: Halal Video Filter",
+  "EECommittee",
+  "Tawsilah Abshir",
+  "Azkari / Dhikr",
+  "Fazawwijuhu",
+  "Al-Tibyan Educational Center",
+  "Sada",
+  "Ghadd",
+  "Horizon",
+  "cohere-transcribe",
+]);
+
+const SELECTED_PROJECTS = RESUME_DATA.projects.filter((project) =>
+  SELECTED_PROJECT_TITLES.has(project.title),
+);
+const PROJECTS = [
+  ...SELECTED_PROJECTS,
+  ...RESUME_DATA.projects.filter(
+    (project) => !SELECTED_PROJECT_TITLES.has(project.title),
+  ),
+];
 
 export const metadata: Metadata = {
-  title: "Haitham's Resume",
+  title: "Haitham Assoli | Software Engineer",
   description: RESUME_DATA.summary,
 };
 
@@ -40,30 +68,28 @@ export default function Page() {
               </a>
             </p>
             <div className="flex gap-x-1 pt-1 font-mono text-sm text-muted-foreground print:hidden">
-              {RESUME_DATA.contact.email ? (
-                <Button
-                  className="size-8"
-                  variant="outline"
-                  size="icon"
-                  asChild
+              <Button className="size-8" variant="outline" size="icon" asChild>
+                <a
+                  aria-label="Email"
+                  href={`mailto:${RESUME_DATA.contact.email}`}
                 >
-                  <a href={`mailto:${RESUME_DATA.contact.email}`}>
-                    <MailIcon className="size-4" />
-                  </a>
-                </Button>
-              ) : null}
-              {RESUME_DATA.contact.tel ? (
-                <Button
-                  className="size-8"
-                  variant="outline"
-                  size="icon"
-                  asChild
+                  <MailIcon className="size-4" />
+                </a>
+              </Button>
+              <Button className="size-8" variant="outline" size="icon" asChild>
+                <a aria-label="Phone" href={`tel:${RESUME_DATA.contact.tel}`}>
+                  <PhoneIcon className="size-4" />
+                </a>
+              </Button>
+              <Button className="size-8" variant="outline" size="icon" asChild>
+                <a
+                  aria-label="Portfolio"
+                  href={RESUME_DATA.personalWebsiteUrl}
+                  target="_blank"
                 >
-                  <a href={`tel:${RESUME_DATA.contact.tel}`}>
-                    <PhoneIcon className="size-4" />
-                  </a>
-                </Button>
-              ) : null}
+                  <GlobeIcon className="size-4" />
+                </a>
+              </Button>
               {RESUME_DATA.contact.social.map((social) => (
                 <Button
                   key={social.name}
@@ -72,45 +98,51 @@ export default function Page() {
                   size="icon"
                   asChild
                 >
-                  <a href={social.url} target="_blank">
+                  <a aria-label={social.name} href={social.url} target="_blank">
                     <social.icon className="size-4" />
                   </a>
                 </Button>
               ))}
             </div>
-            <div className="hidden flex-col gap-x-1 font-mono text-sm text-muted-foreground print:flex print:text-[12px]">
-              {RESUME_DATA.contact.email ? (
-                <a href={`mailto:${RESUME_DATA.contact.email}`}>
-                  <span className="underline">{RESUME_DATA.contact.email}</span>
+            <div className="hidden flex-wrap gap-x-2 font-mono text-muted-foreground print:flex print:text-[10px]">
+              <a
+                className="underline"
+                href={`mailto:${RESUME_DATA.contact.email}`}
+              >
+                {RESUME_DATA.contact.email}
+              </a>
+              {RESUME_DATA.contact.social.slice(0, 2).map((social) => (
+                <a className="underline" href={social.url} key={social.name}>
+                  {social.name}
                 </a>
-              ) : null}
-              {RESUME_DATA.contact.tel ? (
-                <a href={`tel:${RESUME_DATA.contact.tel}`}>
-                  <span className="underline">{RESUME_DATA.contact.tel}</span>
-                </a>
-              ) : null}
+              ))}
+              <a className="underline" href={RESUME_DATA.personalWebsiteUrl}>
+                cv.assoli.site
+              </a>
             </div>
           </div>
 
-          <Avatar className="size-28 *:print:hidden">
+          <Avatar className="size-28 print:hidden">
             <AvatarImage alt={RESUME_DATA.name} src={RESUME_DATA.avatarUrl} />
             <AvatarFallback>{RESUME_DATA.initials}</AvatarFallback>
           </Avatar>
         </div>
+
         <Section>
-          <h2 className="text-xl font-bold print:text-xl">About</h2>
+          <h2 className="text-xl font-bold print:text-xl">Summary</h2>
           <p className="text-pretty font-mono text-sm text-muted-foreground print:text-[12px]">
             {RESUME_DATA.summary}
           </p>
         </Section>
+
         <Section>
-          <h2 className="text-xl font-bold print:text-xl">Work Experience</h2>
-          {RESUME_DATA.work.map((work) => {
-            return (
-              <Card key={work.company}>
-                <CardHeader>
-                  <div className="flex items-center justify-between gap-x-2 text-base print:text-base">
-                    <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
+          <h2 className="text-xl font-bold print:text-xl">Experience</h2>
+          {RESUME_DATA.work.map((work) => (
+            <Card key={work.company}>
+              <CardHeader>
+                <div className="flex items-center justify-between gap-x-2 text-base print:text-base">
+                  <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
+                    {work.link ? (
                       <a
                         className="hover:underline"
                         target="_blank"
@@ -118,143 +150,150 @@ export default function Page() {
                       >
                         {work.company}
                       </a>
-                      <span className="inline-flex gap-x-1">
-                        {work.badges.map((badge) => (
-                          <Badge
-                            variant="secondary"
-                            className="align-middle text-xs print:px-1 print:py-0.5 print:text-[8px] print:leading-tight"
-                            key={badge}
-                          >
-                            {badge}
-                          </Badge>
-                        ))}
-                      </span>
-                    </h3>
-                    <div className="text-sm tabular-nums text-gray-500 print:text-sm">
-                      {work.start} - {work.end ?? "Present"}
-                    </div>
+                    ) : (
+                      work.company
+                    )}
+                    <span className="inline-flex gap-x-1">
+                      {work.badges.map((badge) => (
+                        <Badge
+                          variant="secondary"
+                          className="align-middle text-xs print:px-1 print:py-0.5 print:text-[8px] print:leading-tight"
+                          key={badge}
+                        >
+                          {badge}
+                        </Badge>
+                      ))}
+                    </span>
+                  </h3>
+                  <div className="text-sm tabular-nums text-gray-500 print:text-sm">
+                    {work.start} - {work.end ?? "Present"}
                   </div>
+                </div>
+                <h4 className="font-mono text-sm leading-none print:text-[12px]">
+                  {work.title}
+                </h4>
+              </CardHeader>
+              <CardContent className="mt-1 text-xs print:text-[10.5px] print:leading-snug">
+                <ul className="ml-4 list-disc space-y-1">
+                  {work.description.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+              </CardContent>
+            </Card>
+          ))}
+        </Section>
 
-                  <h4 className="font-mono text-sm leading-none print:text-[12px]">
-                    {work.title}
-                  </h4>
-                </CardHeader>
-                <CardContent className="mt-1 text-xs print:text-[10.5px] print:leading-snug">
-                  {work.description}
-                </CardContent>
-              </Card>
-            );
-          })}
-        </Section>
         <Section className="print:break-before-page">
-          <h2 className="text-xl font-bold print:text-xl">Education</h2>
-          {RESUME_DATA.education.map((education) => {
-            return (
-              <Card key={education.school}>
-                <CardHeader>
-                  <div className="flex items-center justify-between gap-x-2 text-base print:text-base">
-                    <h3 className="font-semibold leading-none">
-                      {education.school}
-                      <span className="inline-flex gap-x-1">
-                        {education.badges.map((badge) => (
-                          <Badge
-                            variant="secondary"
-                            className="align-middle text-xs print:px-1 print:py-0.5 print:text-[8px] print:leading-tight"
-                            key={badge}
-                          >
-                            {badge}
-                          </Badge>
-                        ))}
-                      </span>
-                    </h3>
-                    <div className="text-sm tabular-nums text-gray-500 print:text-[10px]">
-                      {education.start} - {education.end}
-                    </div>
-                  </div>
-                </CardHeader>
-                <CardContent className="mt-2 print:text-[10px]">
-                  {education.degree}
-                </CardContent>
-              </Card>
-            );
-          })}
+          <h2 className="text-xl font-bold print:text-xl">Skills</h2>
+          <div className="space-y-2 print:space-y-1">
+            {RESUME_DATA.skills.map((group) => (
+              <div key={group.category}>
+                <h3 className="mb-1 font-mono text-xs font-semibold">
+                  {group.category}
+                </h3>
+                <div className="flex flex-wrap gap-1">
+                  {group.items.map((skill) => (
+                    <Badge className="print:text-[9px]" key={skill}>
+                      {skill}
+                    </Badge>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
         </Section>
+
+        <Section>
+          <h2 className="text-xl font-bold print:text-xl">Education</h2>
+          {RESUME_DATA.education.map((education) => (
+            <Card key={education.school}>
+              <CardHeader>
+                <div className="flex items-center justify-between gap-x-2 text-base print:text-base">
+                  <h3 className="font-semibold leading-none">
+                    {education.school}
+                  </h3>
+                  <div className="text-sm tabular-nums text-gray-500 print:text-[10px]">
+                    {education.start} - {education.end}
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent className="mt-2 print:text-[10px]">
+                {education.degree}
+              </CardContent>
+            </Card>
+          ))}
+        </Section>
+
         <Section>
           <h2 className="text-xl font-bold print:text-xl">
-            Licenses & Certifications
+            Training &amp; Certifications
           </h2>
-          {RESUME_DATA.certifications.map((certification) => {
-            return (
-              <Card key={certification.title}>
-                <CardHeader>
-                  <div className="flex items-center justify-between gap-x-2 text-base print:text-base">
-                    <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
-                      <a
-                        className="hover:underline"
-                        target="_blank"
-                        href={certification.link}
-                      >
-                        {certification.title}
-                      </a>
-                      <span className="inline-flex gap-x-1">
-                        {certification.badges.map((badge) => (
-                          <Badge
-                            variant="secondary"
-                            className="align-middle text-xs print:px-1 print:py-0.5 print:text-[8px] print:leading-tight"
-                            key={badge}
-                          >
-                            {badge}
-                          </Badge>
-                        ))}
-                      </span>
-                    </h3>
-                    <div className="text-sm tabular-nums text-gray-500 print:text-sm">
-                      {certification.date}
-                    </div>
+          {RESUME_DATA.certifications.map((certification) => (
+            <Card key={certification.title}>
+              <CardHeader>
+                <div className="flex items-center justify-between gap-x-2 text-base print:text-base">
+                  <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
+                    <a
+                      className="hover:underline"
+                      target="_blank"
+                      href={certification.link}
+                    >
+                      {certification.title}
+                    </a>
+                    <span className="inline-flex gap-x-1">
+                      {certification.badges.map((badge) => (
+                        <Badge
+                          variant="secondary"
+                          className="align-middle text-xs print:px-1 print:py-0.5 print:text-[8px] print:leading-tight"
+                          key={badge}
+                        >
+                          {badge}
+                        </Badge>
+                      ))}
+                    </span>
+                  </h3>
+                  <div className="text-sm tabular-nums text-gray-500 print:text-sm">
+                    {certification.date}
                   </div>
-
-                  <h4 className="font-mono text-sm leading-none print:text-[12px]">
-                    {certification.organization}
-                  </h4>
-                </CardHeader>
-                <CardContent className="mt-2 text-xs print:text-[10px]">
-                  {certification.description}
-                </CardContent>
-              </Card>
-            );
-          })}
-        </Section>
-        <Section>
-          <h2 className="text-xl font-bold print:text-xl">Skills</h2>
-          <div className="flex flex-wrap gap-1">
-            {RESUME_DATA.skills.map((skill) => {
-              return (
-                <Badge className="print:text-[10px]" key={skill}>
-                  {skill}
-                </Badge>
-              );
-            })}
-          </div>
+                </div>
+                <h4 className="font-mono text-sm leading-none print:text-[12px]">
+                  {certification.organization}
+                </h4>
+              </CardHeader>
+              <CardContent className="mt-2 text-xs print:text-[10px]">
+                {certification.description}
+              </CardContent>
+            </Card>
+          ))}
         </Section>
 
         <Section className="scroll-mb-16 print:break-before-page">
-          <h2 className="text-xl font-bold print:text-xl">Projects</h2>
+          <h2 className="text-xl font-bold print:text-xl">
+            <span className="print:hidden">Projects</span>
+            <span className="hidden print:inline">Selected Projects</span>
+          </h2>
           <div className="-mx-3 grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3 print:grid-cols-3 print:gap-2">
-            {RESUME_DATA.projects.map((project, index) => {
-              return (
-                <ProjectCard
-                  key={project.title}
-                  title={project.title}
-                  description={project.description}
-                  tags={project.techStack}
-                  link={"link" in project ? project.link.href : undefined}
-                  className={
-                    index >= PRINT_PROJECT_LIMIT ? "print:hidden" : undefined
-                  }
-                />
-              );
-            })}
+            {PROJECTS.map((project, index) => (
+              <ProjectCard
+                key={project.title}
+                title={project.title}
+                description={project.description}
+                tags={project.techStack}
+                link={project.link.href}
+                source={"source" in project ? project.source : undefined}
+                className={
+                  index >= SELECTED_PROJECTS.length ? "print:hidden" : undefined
+                }
+              />
+            ))}
           </div>
+          <a
+            className="hidden font-mono text-xs underline print:inline"
+            href={RESUME_DATA.personalWebsiteUrl}
+          >
+            View all {RESUME_DATA.projects.length} projects at cv.assoli.site
+          </a>
         </Section>
       </section>
 

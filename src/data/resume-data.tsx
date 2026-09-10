@@ -5,13 +5,12 @@ export const RESUME_DATA = {
   initials: "HA",
   location: "Amman, Jordan",
   locationLink: "https://www.google.com/maps/place/Amman",
-  about:
-    "Detail-oriented Web & Mobile FullStack Developer dedicated to building high-quality products.",
+  about: "Software Engineer | Full Stack & Mobile",
   summary:
-    "I love turning beautiful designs into usable websites that respond to various devices and user contexts and are powered by code that’s just as beautiful, as well as scalable. I always seek perfection to make my projects unique and creative and I do so by keeping my eyes on the new tools, reading articles, and following the right people.",
+    "Software Engineer with 4+ years of experience building production web, mobile, and backend systems across e-commerce, healthcare and bioinformatics, and consumer applications. Experienced with TypeScript, React, React Native, Next.js, NestJS, Node.js, and PostgreSQL, with a focus on scalable architecture, type safety, performance, and developer experience.",
   avatarUrl:
     "https://avatars.githubusercontent.com/u/74528836?s=400&u=6d3ef2f0aab56016211b826c9457156aee8c8c81&v=4",
-  personalWebsiteUrl: "https://haitham-assoli-resume.vercel.app/",
+  personalWebsiteUrl: "https://cv.assoli.site/",
   contact: {
     email: "haitham.b.assoli@gmail.com",
     tel: "+962776193666",
@@ -37,25 +36,24 @@ export const RESUME_DATA = {
     {
       school: "Irbid National University",
       badges: [],
-      degree: "Bachelor's degree, Computer Science - Excellent",
+      degree: "B.Sc. Computer Science, Excellent",
       start: "2022",
       end: "2024",
     },
     {
       school: "Jordan University of Science and Technology",
-      badges: ["Incomplete"],
-      degree:
-        "Bachelor's degree, Electrical and Electronics Engineering - Very Good",
+      badges: [],
+      degree: "Electrical and Electronics Engineering Coursework",
       start: "2018",
       end: "2022",
     },
   ],
   certifications: [
     {
-      title: "AWS DevOps",
+      title: "AWS DevOps Training",
       organization: "Cloud Native Base Camp",
       description:
-        "Design and implement and operate cloud solutions from ground up.",
+        "Designed, implemented, and operated cloud solutions on AWS.",
       link: "https://cloudnativebasecamp.com/courses/aws-devops-90/",
       date: "Sep 2024",
       badges: [],
@@ -64,7 +62,7 @@ export const RESUME_DATA = {
       title: "Data Structures Decode",
       organization: "Cloud Native Base Camp",
       description:
-        "Learn the basics of data structures and algorithms, including how to use them to solve real-world problems.",
+        "Applied core data structures and algorithms to software problems.",
       link: "https://cloudnativebasecamp.com/courses/ds01/",
       date: "Oct 2024",
       badges: [],
@@ -73,16 +71,8 @@ export const RESUME_DATA = {
       title: "Algorithms Analysis and Design from scratch",
       organization: "Cloud Native Base Camp",
       description:
-        "Thinking through code before writing it and explore common approaches to coding. This builds a solid foundation for your work.",
+        "Analyzed common algorithms and designed solutions before implementation.",
       link: "https://raw.githubusercontent.com/haithamassoli/Licenses-Certifications/refs/heads/main/Algorithms%20Analysis%20and%20Design.png",
-      date: "Oct 2024",
-      badges: [],
-    },
-    {
-      title: "Node.js From Scratch",
-      organization: "Cloud Native Base Camp",
-      description: "How Node.js works behind the scenes",
-      link: "https://raw.githubusercontent.com/haithamassoli/Licenses-Certifications/refs/heads/main/Node.js%20From%20Scratch%20Certificate.png",
       date: "Oct 2024",
       badges: [],
     },
@@ -90,37 +80,10 @@ export const RESUME_DATA = {
       title: "Fundamentals of Database Engineering",
       organization: "Udemy",
       description:
-        "Focuses on core database engineering concepts, not SQL or programming. Covers advanced topics such as Indexing, Partitioning, Sharding, Replication, B-trees, Concurrency Control, Database Engines, and Security.",
+        "Studied indexing, partitioning, sharding, replication, B-trees, concurrency control, database engines, and security.",
       link: "https://raw.githubusercontent.com/haithamassoli/Licenses-Certifications/refs/heads/main/Fundamentals%20of%20Database.jpeg",
       date: "Feb 2023",
       badges: ["24 hours"],
-    },
-    {
-      title: "JavaScript Algorithms and Data Structures Masterclass",
-      organization: "Udemy",
-      description:
-        "Comprehensive curriculum covering both foundational and advanced topics such as Big O notation, Algorithms, and Data structures.",
-      link: "https://raw.githubusercontent.com/haithamassoli/Licenses-Certifications/refs/heads/main/JavaScript%20Algorithms%20and%20DS.jpeg",
-      date: "Feb 2022",
-      badges: ["22 hours"],
-    },
-    {
-      title: "React Native - The Practical Guide",
-      organization: "Udemy",
-      description:
-        "Explore the React Native ecosystem, covering core concepts, responsive design, navigation, and using native components like maps and the camera.",
-      link: "https://www.udemy.com/certificate/UC-28ff8b71-f242-47cd-be59-f8b06b2cc43d/",
-      date: "Apr 2022",
-      badges: ["58 hours"],
-    },
-    {
-      title: "Linux Basics Course",
-      organization: "Flex Courses",
-      description:
-        "Learn essential Linux skills, focusing on Command Line proficiency and system basics for effective use.",
-      link: "https://www.flexcourses.com/certificates/401651095889/view",
-      date: "Apr 2022",
-      badges: ["3 hours"],
     },
   ],
   work: [
@@ -131,104 +94,168 @@ export const RESUME_DATA = {
       title: "Software Engineer",
       start: "2026",
       end: null,
-      description:
-        "Building scalable multi-vendor e-commerce solutions with NestJS, Next.js, and React Native. Working on high-performance backend services, responsive web experiences, and mobile applications designed for speed, reliability, and growth.",
+      description: [
+        "Designed and developed a multi-vendor e-commerce platform using NestJS, Next.js, React Native, and TypeScript.",
+        "Built core workflows for vendors, customers, products, orders, payments, and mobile and web experiences.",
+        "Improved maintainability with typed APIs, shared business logic, and modular backend and frontend systems.",
+      ],
     },
     {
-      company: "Bionl.Ai",
+      company: "Bionl.AI",
       link: "https://bionl.ai/",
       badges: ["Remote"],
       title: "Software Engineer",
       start: "2025",
       end: "2026",
-      description:
-        "Developed bioinformatics applications using React and React Native in a monorepo architecture. Built type-safe solutions with TypeScript, Zod, Prisma, and TanStack Query. Contributed to a no-code platform serving 8,000+ researchers with GenAI-powered data analysis and bioinformatics pipeline features. Ensured HIPAA, GDPR, and SOC2 Type 2 compliance standards.",
+      description: [
+        "Built web and mobile bioinformatics applications using React, React Native, and TypeScript in a monorepo.",
+        "Developed type-safe data workflows with Zod, Prisma, and TanStack Query.",
+        "Shipped Generative AI and bioinformatics pipeline features for a no-code platform used by 8,000+ researchers.",
+        "Delivered production features under HIPAA, GDPR, and SOC 2 Type II requirements.",
+      ],
     },
     {
       company: "Malabji",
       link: "https://malabji.vercel.app/",
       badges: [],
-      title: "Founder & CEO",
+      title: "Founder / Software Engineer",
       start: "2025",
       end: null,
-      description:
-        "Search, share, compete, book, enjoy—that's Malabji. An app that makes it simple to look for playgrounds, see which ones are open, and make reservations. Additionally, it lets you look for a team or friends to play with. You can challenge them and compete with them. Additionally, you may start or take part in tournaments. We also offer several sports academies. Accessible for any sport.",
+      description: [
+        "Designed and built a sports marketplace for discovering venues, booking pitches, finding players, creating teams, and organizing tournaments.",
+        "Developed the mobile application with React Native, TypeScript, and Supabase.",
+        "Led architecture, authentication, database design, booking workflows, backend integration, and deployment from concept to production.",
+      ],
     },
     {
       company: "Freelance",
       link: "",
       badges: [],
-      title: "Web & Mobile FullStack Developer",
+      title: "Freelance Software Engineer",
       start: "2022",
       end: null,
-      description:
-        "Collaborated with clients to gather requirements, propose technical solutions, and deliver high-quality products within deadlines.",
+      description: [
+        "Built production web and mobile applications with React, Next.js, React Native, Node.js, and TypeScript.",
+        "Delivered frontend interfaces, backend APIs, database schemas, third-party integrations, deployments, and maintenance.",
+        "Translated client requirements into scoped technical solutions and shipped products within agreed timelines.",
+      ],
     },
     {
-      company: "Repzo inc",
+      company: "Repzo",
       link: "https://repzo.com/",
       badges: [],
       title: "Software Engineer",
       start: "2022",
       end: "2023",
-      description:
-        "Worked on creating and keeping up a sizable dashboard. Code and dependencies were updated to keep the system up to date with the newest versions, enhancing security and speed. Technologies: TypeScript, React, Node.js with express.",
+      description: [
+        "Developed and maintained a large-scale dashboard using React and TypeScript.",
+        "Modernized legacy dependencies and improved application security, maintainability, and performance.",
+        "Contributed to backend services using Node.js and Express.js.",
+      ],
     },
     {
       company: "Orange Jordan",
       link: "https://orange.jo/",
       badges: ["Internship"],
-      title: "Full-stack Developer Trainee",
+      title: "Full-Stack Developer Trainee",
       start: "2021",
       end: "2022",
-      description:
-        "A 7-month internship, gaining hands-on experience with web development technologies. Developed 10 projects that involved building dynamic websites. Collaborated with peers and mentors to deliver functional and user-friendly solutions.",
-    },
-    {
-      company: "EECommittee",
-      link: "https://www.facebook.com/groups/eelajna.just",
-      badges: ["Volunteer"],
-      title: "Full Stack Developer",
-      start: "2018",
-      end: null,
-      description:
-        "Collaborated closely with the group to enhance classmates educational experiences.",
+      description: [
+        "Completed a seven-month full-stack internship and shipped 10 responsive web projects with support from engineering mentors.",
+      ],
     },
   ],
   skills: [
-    "C++",
-    "JavaScript",
-    "TypeScript",
-    "React",
-    "Redux",
-    "React Query",
-    "React Native",
-    "Next.js",
-    "Framer Motion",
-    "NestJS",
-    "Express",
-    "Php",
-    "Laravel",
-    "SQL",
-    "MongoDB",
-    "Firebase",
-    "Supabase",
-    "Tailwind CSS",
-    "Node.js",
-    "Figma",
-    "Git",
-    "SEO",
-    "UX",
-    "Linux",
-    "Algorithms",
-    "Data Structures",
-    "REST API",
-    "Redis",
-    "AWS",
-    "Docker",
-    "DevOps",
+    {
+      category: "Languages",
+      items: ["TypeScript", "JavaScript", "Python", "Kotlin", "Swift", "C++"],
+    },
+    {
+      category: "Frontend & Mobile",
+      items: [
+        "React",
+        "Next.js",
+        "React Native",
+        "Expo",
+        "Tailwind CSS",
+        "TanStack Query",
+      ],
+    },
+    {
+      category: "Backend & Data",
+      items: [
+        "Node.js",
+        "NestJS",
+        "Express.js",
+        "Laravel",
+        "PostgreSQL",
+        "MongoDB",
+        "Supabase",
+        "Firebase",
+        "Redis",
+        "Meilisearch",
+      ],
+    },
+    {
+      category: "AI Engineering",
+      items: [
+        "LLM & Agent Engineering",
+        "Model Context Protocol (MCP)",
+        "Retrieval-Augmented Generation (RAG)",
+        "Vector Databases & Semantic Search",
+        "Prompt & Context Engineering",
+        "ONNX Runtime",
+        "Whisper",
+      ],
+    },
+    {
+      category: "Infrastructure & Practices",
+      items: [
+        "AWS",
+        "Docker",
+        "Linux",
+        "Git",
+        "CI/CD",
+        "REST APIs",
+        "Monorepos",
+        "Type-safe API Design",
+      ],
+    },
   ],
   projects: [
+    {
+      title: "Little Muslim",
+      techStack: [
+        "Next.js",
+        "TypeScript",
+        "Convex Auth",
+        "RTL",
+        "Web Speech API",
+      ],
+      description:
+        "Built an illustrated Arabic learning platform with 111 Islamic lessons, family accounts, progress tracking, quizzes, and accessible narration.",
+      source: "https://github.com/haithamassoli/Teaching-Children-Islam",
+      link: {
+        label: "littlemuslim.assoli.site",
+        href: "https://littlemuslim.assoli.site/",
+      },
+    },
+    {
+      title: "Sitr",
+      techStack: [
+        "Swift",
+        "SwiftUI",
+        "ScreenCaptureKit",
+        "Core ML",
+        "AppKit",
+      ],
+      description:
+        "Built a private, on-device macOS app that detects and covers people across apps in real time without network access.",
+      link: {
+        label: "github.com",
+        href: "https://github.com/haithamassoli/Sitr",
+      },
+    },
     {
       title: "Aoun",
       techStack: [
@@ -240,7 +267,7 @@ export const RESUME_DATA = {
         "TanStack Table",
       ],
       description:
-        "A free academic platform for Jordanian university students.",
+        "Built a free academic platform for Jordanian university students with searchable resources and structured academic data.",
       link: {
         label: "aoun.assoli.site",
         href: "https://aoun.assoli.site",
@@ -256,7 +283,7 @@ export const RESUME_DATA = {
         "Tailwind CSS",
       ],
       description:
-        "Search thousands of hours of lessons and land on the exact second.",
+        "Built Arabic content search across thousands of hours of lessons using Whisper ASR and Meilisearch, with timestamp-level results.",
       link: {
         label: "alkulify.assoli.site",
         href: "https://alkulify.assoli.site",
@@ -265,7 +292,8 @@ export const RESUME_DATA = {
     {
       title: "pastehtml",
       techStack: ["Next.js", "TypeScript", "Convex", "MCP", "Tailwind CSS"],
-      description: "Drop an HTML file, get a public URL on its own origin.",
+      description:
+        "Built an MCP-enabled publishing service that turns uploaded HTML into an isolated public URL.",
       link: {
         label: "pastehtml.assoli.site",
         href: "https://pastehtml.assoli.site",
@@ -323,7 +351,7 @@ export const RESUME_DATA = {
         "AVFoundation",
       ],
       description:
-        "Strips music and censors imagery in a video, entirely on your device.",
+        "Built native Android and iOS media pipelines with Kotlin, Swift, ONNX Runtime, MediaCodec, OpenGL ES, and AVFoundation.",
       link: {
         label: "play.google.com",
         href: "https://play.google.com/store/apps/details?id=com.haithamassoli.naqi",
@@ -552,7 +580,7 @@ export const RESUME_DATA = {
         "WASM",
       ],
       description:
-        "Arabic subtitles for English YouTube, translated on your device.",
+        "Built on-device English-to-Arabic subtitle translation with NLLB-200, transformers.js, WebGPU, and WASM.",
       link: {
         label: "github.com",
         href: "https://github.com/haithamassoli/sada",
@@ -583,7 +611,8 @@ export const RESUME_DATA = {
         "NudeNet v3",
         "YOLOv8n",
       ],
-      description: "System-wide on-device image filtering for Android.",
+      description:
+        "Built system-wide on-device image filtering for Android using YOLOv8n, NudeNet, and ONNX Runtime.",
       link: {
         label: "github.com",
         href: "https://github.com/haithamassoli/haramblur",
@@ -600,7 +629,7 @@ export const RESUME_DATA = {
         "Native bridges",
       ],
       description:
-        "Eye breaks that know when you are actually at the computer.",
+        "Built a cross-platform Electron desktop app with native bridges and presence-aware break reminders.",
       link: {
         label: "github.com",
         href: "https://github.com/haithamassoli/horizon",
@@ -753,7 +782,7 @@ export const RESUME_DATA = {
         "Hugging Face",
       ],
       description:
-        "High-throughput Arabic/English transcription, batched properly.",
+        "Built a GPU-batched Arabic and English transcription pipeline with Silero VAD and subtitle export.",
       link: {
         label: "github.com",
         href: "https://github.com/AliOsm/cohere-transcribe",
