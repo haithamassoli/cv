@@ -200,8 +200,8 @@ export const RESUME_DATA = {
       category: "AI Engineering",
       items: [
         "LLM & Agent Engineering",
-        "Model Context Protocol (MCP)",
-        "Retrieval-Augmented Generation (RAG)",
+        "MCP",
+        "RAG",
         "Vector Databases & Semantic Search",
         "Prompt & Context Engineering",
         "ONNX Runtime",
@@ -223,39 +223,6 @@ export const RESUME_DATA = {
     },
   ],
   projects: [
-    {
-      title: "Little Muslim",
-      techStack: [
-        "Next.js",
-        "TypeScript",
-        "Convex Auth",
-        "RTL",
-        "Web Speech API",
-      ],
-      description:
-        "Built an illustrated Arabic learning platform with 111 Islamic lessons, family accounts, progress tracking, quizzes, and accessible narration.",
-      source: "https://github.com/haithamassoli/Teaching-Children-Islam",
-      link: {
-        label: "littlemuslim.assoli.site",
-        href: "https://littlemuslim.assoli.site/",
-      },
-    },
-    {
-      title: "Sitr",
-      techStack: [
-        "Swift",
-        "SwiftUI",
-        "ScreenCaptureKit",
-        "Core ML",
-        "AppKit",
-      ],
-      description:
-        "Built a private, on-device macOS app that detects and covers people across apps in real time without network access.",
-      link: {
-        label: "github.com",
-        href: "https://github.com/haithamassoli/Sitr",
-      },
-    },
     {
       title: "Aoun",
       techStack: [
@@ -287,6 +254,23 @@ export const RESUME_DATA = {
       link: {
         label: "alkulify.assoli.site",
         href: "https://alkulify.assoli.site",
+      },
+    },
+    {
+      title: "Little Muslim",
+      techStack: [
+        "Next.js",
+        "TypeScript",
+        "Convex Auth",
+        "RTL",
+        "Web Speech API",
+      ],
+      description:
+        "Built an illustrated Arabic learning platform with 111 Islamic lessons, family accounts, progress tracking, quizzes, and accessible narration.",
+      source: "https://github.com/haithamassoli/Teaching-Children-Islam",
+      link: {
+        label: "littlemuslim.assoli.site",
+        href: "https://littlemuslim.assoli.site/",
       },
     },
     {
@@ -358,6 +342,32 @@ export const RESUME_DATA = {
       },
     },
     {
+      title: "Tawsilah Abshir",
+      techStack: [
+        "React Native",
+        "Expo",
+        "TypeScript",
+        "Maps",
+        "Push Notifications",
+        "React Query",
+      ],
+      description: "Ride-hailing built for Ajloun, not adapted to it.",
+      link: {
+        label: "play.google.com",
+        href: "https://play.google.com/store/apps/details?id=com.assoliindustries.tawsilah",
+      },
+    },
+    {
+      title: "Sitr",
+      techStack: ["Swift", "SwiftUI", "ScreenCaptureKit", "Core ML", "AppKit"],
+      description:
+        "Built a private, on-device macOS app that detects and covers people across apps in real time without network access.",
+      link: {
+        label: "github.com",
+        href: "https://github.com/haithamassoli/Sitr",
+      },
+    },
+    {
       title: "EECommittee",
       techStack: [
         "React Native",
@@ -375,22 +385,6 @@ export const RESUME_DATA = {
       },
     },
     {
-      title: "Tawsilah Abshir",
-      techStack: [
-        "React Native",
-        "Expo",
-        "TypeScript",
-        "Maps",
-        "Push Notifications",
-        "React Query",
-      ],
-      description: "Ride-hailing built for Ajloun, not adapted to it.",
-      link: {
-        label: "play.google.com",
-        href: "https://play.google.com/store/apps/details?id=com.assoliindustries.tawsilah",
-      },
-    },
-    {
       title: "Azkari / Dhikr",
       techStack: ["JavaScript", "Swift", "SwiftUI", "Kotlin", "C#", "WPF"],
       description:
@@ -401,12 +395,13 @@ export const RESUME_DATA = {
       },
     },
     {
-      title: "cv.assoli.site",
+      title: "portfolio.assoli.site",
       techStack: ["Next.js", "TypeScript", "React", "Tailwind CSS", "SEO"],
-      description: "My web résumé: dense, scannable, and printable as-is.",
+      description:
+        "Multi-page portfolio with a command menu and animated transitions.",
       link: {
-        label: "cv.assoli.site",
-        href: "https://cv.assoli.site",
+        label: "portfolio.assoli.site",
+        href: "https://portfolio.assoli.site",
       },
     },
     {
@@ -558,15 +553,6 @@ export const RESUME_DATA = {
       link: {
         label: "assoli.site",
         href: "https://assoli.site",
-      },
-    },
-    {
-      title: "FeedGram",
-      techStack: ["Next.js", "TypeScript", "Tailwind CSS"],
-      description: "Follow public Telegram channels without an account.",
-      link: {
-        label: "github.com",
-        href: "https://github.com/haithamassoli/telegram-feed",
       },
     },
     {
