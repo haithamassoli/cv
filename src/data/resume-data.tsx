@@ -429,6 +429,7 @@ export const RESUME_DATA: ResumeData = {
     },
     {
       title: "Little Muslim",
+      featured: true,
       techStack: [
         "Next.js",
         "TypeScript",
@@ -446,6 +447,7 @@ export const RESUME_DATA: ResumeData = {
     },
     {
       title: "Al-Tibyan Educational Center",
+      featured: true,
       techStack: [
         "React Native",
         "TypeScript",
@@ -463,6 +465,7 @@ export const RESUME_DATA: ResumeData = {
     },
     {
       title: "EECommittee",
+      featured: true,
       techStack: [
         "React Native",
         "Expo",
@@ -480,6 +483,7 @@ export const RESUME_DATA: ResumeData = {
     },
     {
       title: "Fazawwijuhu",
+      featured: true,
       techStack: [
         "Next.js 16",
         "React 19",
@@ -497,6 +501,7 @@ export const RESUME_DATA: ResumeData = {
     },
     {
       title: "Khatwa",
+      featured: true,
       techStack: [
         "Kotlin",
         "Jetpack Compose",
@@ -514,6 +519,7 @@ export const RESUME_DATA: ResumeData = {
     },
     {
       title: "Azkari / Dhikr",
+      featured: true,
       techStack: ["JavaScript", "Swift", "SwiftUI", "Kotlin", "C#", "WPF"],
       description:
         "Periodic dhikr reminders on every screen: web, Apple platforms (SwiftUI), Android (Kotlin), and Windows (WPF).",
@@ -524,6 +530,7 @@ export const RESUME_DATA: ResumeData = {
     },
     {
       title: "TeleStream",
+      featured: true,
       techStack: ["Next.js", "TypeScript", "Telegram API", "Tailwind CSS"],
       description:
         "Merges every Telegram channel you follow into a single timeline using the Telegram API.",
@@ -563,6 +570,7 @@ export const RESUME_DATA: ResumeData = {
     },
     {
       title: "Ma'an",
+      featured: true,
       techStack: [
         "Next.js 16",
         "React 19",
@@ -597,6 +605,7 @@ export const RESUME_DATA: ResumeData = {
     },
     {
       title: "Hadanati",
+      featured: true,
       techStack: ["Next.js", "TypeScript", "React", "Tailwind CSS", "RTL"],
       description:
         "Nursery management system: attendance, assessments, fees, and a parent portal.",
@@ -607,6 +616,7 @@ export const RESUME_DATA: ResumeData = {
     },
     {
       title: "Hirfati",
+      featured: true,
       techStack: [
         "Next.js",
         "TypeScript",
@@ -624,6 +634,7 @@ export const RESUME_DATA: ResumeData = {
     },
     {
       title: "Sarfees",
+      featured: true,
       techStack: ["Next.js", "TypeScript", "React", "Tailwind CSS", "RTL"],
       description:
         "Intercity ride-sharing between Jordan's governorates: post a trip or book a seat.",
@@ -829,6 +840,7 @@ export const RESUME_DATA: ResumeData = {
     },
     {
       title: "Gift",
+      featured: true,
       techStack: [
         "Next.js 16",
         "React Three Fiber",
