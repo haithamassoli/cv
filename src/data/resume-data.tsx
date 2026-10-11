@@ -395,6 +395,70 @@ export const RESUME_DATA = {
       },
     },
     {
+      title: "Khatwa",
+      techStack: [
+        "Kotlin",
+        "Jetpack Compose",
+        "Material 3",
+        "Google Maps",
+        "Routes API",
+        "Roads API",
+      ],
+      description:
+        "Finds a better pickup and dropoff point within walking distance for ride-hailing trips.",
+      link: {
+        label: "github.com",
+        href: "https://github.com/haithamassoli/Khatwa",
+      },
+    },
+    {
+      title: "Irtajil",
+      techStack: ["Astro", "JavaScript", "PWA", "Service Worker", "RTL"],
+      description:
+        "Practice impromptu Arabic speaking: draw a topic, start the timer, talk.",
+      source: "https://github.com/haithamassoli/Irtajil",
+      link: {
+        label: "irtajil.vercel.app",
+        href: "https://irtajil.vercel.app",
+      },
+    },
+    {
+      title: "Wens",
+      techStack: [
+        "Next.js 16",
+        "TypeScript",
+        "Tailwind v4",
+        "Serwist",
+        "PWA",
+        "RTL",
+      ],
+      description:
+        "Short games and activities for couples on one phone, no sign-up.",
+      source: "https://github.com/haithamassoli/wens",
+      link: {
+        label: "wens-sigma.vercel.app",
+        href: "https://wens-sigma.vercel.app",
+      },
+    },
+    {
+      title: "Ma'an",
+      techStack: [
+        "Next.js 16",
+        "React 19",
+        "TypeScript",
+        "Convex",
+        "Tailwind v4",
+        "RTL",
+      ],
+      description:
+        "Couple games played on one device or across two phones, synced in real time.",
+      source: "https://github.com/haithamassoli/romantic-game",
+      link: {
+        label: "romantic-game-one.vercel.app",
+        href: "https://romantic-game-one.vercel.app",
+      },
+    },
+    {
       title: "portfolio.assoli.site",
       techStack: ["Next.js", "TypeScript", "React", "Tailwind CSS", "SEO"],
       description:
