@@ -1,48 +1,32 @@
 ![cv](https://github.com/user-attachments/assets/a3652dc7-9457-4be5-b6ac-ed1386a9580d)
 
+# Haitham Assoli's CV
 
-# Minimalist CV [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FBartoszJarocki%2Fcv)
+Source for [cv.assoli.site](https://cv.assoli.site): a minimalist, print-friendly CV built with Next.js, shadcn/ui, and Tailwind CSS, deployed on Vercel.
 
-Simple web app that renders minimalist CV with print-friendly layout.
+Based on [BartoszJarocki/cv](https://github.com/BartoszJarocki/cv).
 
-Built with Next.js and shadcn/ui, deployed on Vercel.
+## Features
 
-# Features
+- All content lives in a single typed config file: [`src/data/resume-data.tsx`](./src/data/resume-data.tsx)
+- Print / Save as PDF layout: featured projects are printed, the rest stay on the web
+- Command menu (`⌘J` / `Ctrl+J`) for printing, jumping to sections, and opening links
+- SEO: Open Graph and Twitter metadata, JSON-LD `Person` data, sitemap, and robots.txt
+- Built with Next.js 16, React 19, TypeScript, shadcn/ui, and Tailwind CSS
 
-- Setup only takes a few minutes [single config file](./src/data/resume-data.tsx)
-- Built using Next.js 14, React, Typescript, Shadcn/ui, TailwindCss
-- Auto generated Layout
-- Responsive for different devices
-- Optimized for Next.js and Vercel
+## Getting Started Locally
 
-# Getting Started Locally
+Requires Node.js 24.
 
-1. Clone this repository to your local machine:
+```bash
+git clone https://github.com/haithamassoli/cv.git
+cd cv
+npm install
+npm run dev
+```
 
-   ```bash
-   git clone https://github.com/haithamassoli/cv.git
-   ```
+Then edit [`src/data/resume-data.tsx`](./src/data/resume-data.tsx). Mark a project with `featured: true` to include it in the printed CV.
 
-2. Move to the cloned directory
-
-   ```bash
-   cd cv
-   ```
-
-3. Install dependencies:
-
-   ```bash
-   yarn install
-   ```
-
-4. Start the local Server:
-
-   ```bash
-   yarn dev
-   ```
-
-5. Open the [Config file](./src/data/resume-data.tsx) and make changes
-
-# License
+## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
