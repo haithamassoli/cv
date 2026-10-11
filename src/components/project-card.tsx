@@ -14,6 +14,7 @@ interface Props {
   tags: readonly string[];
   link?: string;
   source?: string;
+  role?: string;
   className?: string;
 }
 
@@ -23,6 +24,7 @@ export function ProjectCard({
   tags,
   link,
   source,
+  role,
   className,
 }: Props) {
   return (
@@ -32,19 +34,28 @@ export function ProjectCard({
         className,
       )}
     >
-      <CardHeader className="">
+      <CardHeader>
         <div className="space-y-1">
-          <CardTitle className="text-base">
+          <CardTitle className="flex flex-wrap items-center gap-1 text-base">
             {link ? (
               <a
                 href={link}
                 target="_blank"
-                className="inline-flex items-center gap-1 hover:underline"
+                rel="noopener noreferrer"
+                className="hover:underline"
               >
-                {title}{" "}
+                {title}
               </a>
             ) : (
               title
+            )}
+            {role && (
+              <Badge
+                variant="outline"
+                className="px-1 py-0 text-[10px] font-normal print:text-[8px] print:leading-tight"
+              >
+                {role}
+              </Badge>
             )}
           </CardTitle>
           {source && (
@@ -52,6 +63,7 @@ export function ProjectCard({
               className="font-mono text-[10px] text-muted-foreground underline print:hidden"
               href={source}
               target="_blank"
+              rel="noopener noreferrer"
             >
               GitHub
             </a>
