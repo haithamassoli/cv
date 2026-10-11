@@ -6,6 +6,7 @@ import "./globals.css";
 import React from "react";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://cv.assoli.site"),
   title: "Haitham's CV",
   description: "Haitham Assoli's CV",
 };
