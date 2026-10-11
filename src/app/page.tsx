@@ -9,36 +9,20 @@ import { Button } from "@/components/ui/button";
 import { RESUME_DATA } from "@/data/resume-data";
 import { ProjectCard } from "@/components/project-card";
 
-const SELECTED_PROJECT_TITLES = new Set([
-  "Little Muslim",
-  "Sitr",
-  "Aoun",
-  "Kashaf Abi Ja'far",
-  "pastehtml",
-  "Gift",
-  "TeleStream",
-  "Malabji",
-  "Naqi: Halal Video Filter",
-  "EECommittee",
-  "Tawsilah Abshir",
-  "Azkari / Dhikr",
-  "Fazawwijuhu",
-  "Al-Tibyan Educational Center",
-  "Sada",
-  "Ghadd",
-  "Horizon",
-  "cohere-transcribe",
-]);
+type Project = (typeof RESUME_DATA.projects)[number];
 
-const SELECTED_PROJECTS = RESUME_DATA.projects.filter((project) =>
-  SELECTED_PROJECT_TITLES.has(project.title),
-);
+const isFeatured = (project: Project) =>
+  "featured" in project && project.featured;
+
+const displayUrl = (url: string) =>
+  url.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "");
+
+const FEATURED_PROJECTS = RESUME_DATA.projects.filter(isFeatured);
 const PROJECTS = [
-  ...SELECTED_PROJECTS,
-  ...RESUME_DATA.projects.filter(
-    (project) => !SELECTED_PROJECT_TITLES.has(project.title),
-  ),
+  ...FEATURED_PROJECTS,
+  ...RESUME_DATA.projects.filter((project) => !isFeatured(project)),
 ];
+const CV_HOST = displayUrl(RESUME_DATA.personalWebsiteUrl);
 
 export const metadata: Metadata = {
   title: "Haitham Assoli | Software Engineer",
@@ -84,7 +68,7 @@ export default function Page() {
               <Button className="size-8" variant="outline" size="icon" asChild>
                 <a
                   aria-label="Portfolio"
-                  href={RESUME_DATA.personalWebsiteUrl}
+                  href={RESUME_DATA.portfolioUrl}
                   target="_blank"
                 >
                   <GlobeIcon className="size-4" />
@@ -111,13 +95,16 @@ export default function Page() {
               >
                 {RESUME_DATA.contact.email}
               </a>
+              <a className="underline" href={`tel:${RESUME_DATA.contact.tel}`}>
+                {RESUME_DATA.contact.tel}
+              </a>
               {RESUME_DATA.contact.social.slice(0, 2).map((social) => (
                 <a className="underline" href={social.url} key={social.name}>
-                  {social.name}
+                  {displayUrl(social.url)}
                 </a>
               ))}
               <a className="underline" href={RESUME_DATA.personalWebsiteUrl}>
-                cv.assoli.site
+                {CV_HOST}
               </a>
             </div>
           </div>
@@ -283,7 +270,7 @@ export default function Page() {
                 link={project.link.href}
                 source={"source" in project ? project.source : undefined}
                 className={
-                  index >= SELECTED_PROJECTS.length ? "print:hidden" : undefined
+                  index >= FEATURED_PROJECTS.length ? "print:hidden" : undefined
                 }
               />
             ))}
@@ -292,7 +279,7 @@ export default function Page() {
             className="hidden font-mono text-xs underline print:inline"
             href={RESUME_DATA.personalWebsiteUrl}
           >
-            View all {RESUME_DATA.projects.length} projects at cv.assoli.site
+            View all {RESUME_DATA.projects.length} projects at {CV_HOST}
           </a>
         </Section>
       </section>
@@ -300,8 +287,8 @@ export default function Page() {
       <CommandMenu
         links={[
           {
-            url: RESUME_DATA.personalWebsiteUrl,
-            title: "Personal Website",
+            url: RESUME_DATA.portfolioUrl,
+            title: "Portfolio",
           },
           ...RESUME_DATA.contact.social.map((socialMediaLink) => ({
             url: socialMediaLink.url,

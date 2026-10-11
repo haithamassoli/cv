@@ -11,6 +11,7 @@ export const RESUME_DATA = {
   avatarUrl:
     "https://avatars.githubusercontent.com/u/74528836?s=400&u=6d3ef2f0aab56016211b826c9457156aee8c8c81&v=4",
   personalWebsiteUrl: "https://cv.assoli.site/",
+  portfolioUrl: "https://portfolio.assoli.site/",
   contact: {
     email: "haitham.b.assoli@gmail.com",
     tel: "+962776193666",
@@ -35,14 +36,12 @@ export const RESUME_DATA = {
   education: [
     {
       school: "Irbid National University",
-      badges: [],
       degree: "B.Sc. Computer Science, Excellent",
       start: "2022",
       end: "2024",
     },
     {
       school: "Jordan University of Science and Technology",
-      badges: [],
       degree: "Electrical and Electronics Engineering Coursework",
       start: "2018",
       end: "2022",
@@ -225,6 +224,7 @@ export const RESUME_DATA = {
   projects: [
     {
       title: "Aoun",
+      featured: true,
       techStack: [
         "Next.js",
         "TypeScript",
@@ -234,7 +234,7 @@ export const RESUME_DATA = {
         "TanStack Table",
       ],
       description:
-        "Built a free academic platform for Jordanian university students with searchable resources and structured academic data.",
+        "A free academic platform for Jordanian university students, with searchable resources and course data.",
       link: {
         label: "aoun.assoli.site",
         href: "https://aoun.assoli.site",
@@ -242,6 +242,7 @@ export const RESUME_DATA = {
     },
     {
       title: "Kashaf Abi Ja'far",
+      featured: true,
       techStack: [
         "Astro",
         "TypeScript",
@@ -250,7 +251,7 @@ export const RESUME_DATA = {
         "Tailwind CSS",
       ],
       description:
-        "Built Arabic content search across thousands of hours of lessons using Whisper ASR and Meilisearch, with timestamp-level results.",
+        "Search thousands of hours of Arabic lessons and land on the exact second.",
       link: {
         label: "alkulify.assoli.site",
         href: "https://alkulify.assoli.site",
@@ -258,6 +259,7 @@ export const RESUME_DATA = {
     },
     {
       title: "Little Muslim",
+      featured: true,
       techStack: [
         "Next.js",
         "TypeScript",
@@ -266,7 +268,7 @@ export const RESUME_DATA = {
         "Web Speech API",
       ],
       description:
-        "Built an illustrated Arabic learning platform with 111 Islamic lessons, family accounts, progress tracking, quizzes, and accessible narration.",
+        "111 illustrated Islamic lessons for children, with family accounts, progress tracking, quizzes and narration.",
       source: "https://github.com/haithamassoli/Teaching-Children-Islam",
       link: {
         label: "littlemuslim.assoli.site",
@@ -275,9 +277,10 @@ export const RESUME_DATA = {
     },
     {
       title: "pastehtml",
+      featured: true,
       techStack: ["Next.js", "TypeScript", "Convex", "MCP", "Tailwind CSS"],
       description:
-        "Built an MCP-enabled publishing service that turns uploaded HTML into an isolated public URL.",
+        "Drop an HTML file, get a public URL on its own origin, from the browser or an AI agent.",
       link: {
         label: "pastehtml.assoli.site",
         href: "https://pastehtml.assoli.site",
@@ -285,6 +288,7 @@ export const RESUME_DATA = {
     },
     {
       title: "Gift",
+      featured: true,
       techStack: [
         "Next.js 16",
         "React Three Fiber",
@@ -301,6 +305,7 @@ export const RESUME_DATA = {
     },
     {
       title: "TeleStream",
+      featured: true,
       techStack: ["Next.js", "TypeScript", "Telegram API", "Tailwind CSS"],
       description: "Read every Telegram channel you follow as one timeline.",
       link: {
@@ -309,23 +314,8 @@ export const RESUME_DATA = {
       },
     },
     {
-      title: "Malabji",
-      techStack: [
-        "React Native",
-        "Expo Router",
-        "TypeScript",
-        "Supabase",
-        "Zustand",
-        "React Query",
-      ],
-      description: "Find a pitch, find players, book it, play.",
-      link: {
-        label: "malabji.vercel.app",
-        href: "https://malabji.vercel.app",
-      },
-    },
-    {
       title: "Naqi: Halal Video Filter",
+      featured: true,
       techStack: [
         "Kotlin",
         "Swift",
@@ -335,7 +325,7 @@ export const RESUME_DATA = {
         "AVFoundation",
       ],
       description:
-        "Built native Android and iOS media pipelines with Kotlin, Swift, ONNX Runtime, MediaCodec, OpenGL ES, and AVFoundation.",
+        "Strips music and censors imagery in a video, entirely on your device.",
       link: {
         label: "play.google.com",
         href: "https://play.google.com/store/apps/details?id=com.haithamassoli.naqi",
@@ -343,6 +333,7 @@ export const RESUME_DATA = {
     },
     {
       title: "Tawsilah Abshir",
+      featured: true,
       techStack: [
         "React Native",
         "Expo",
@@ -359,9 +350,10 @@ export const RESUME_DATA = {
     },
     {
       title: "Sitr",
+      featured: true,
       techStack: ["Swift", "SwiftUI", "ScreenCaptureKit", "Core ML", "AppKit"],
       description:
-        "Built a private, on-device macOS app that detects and covers people across apps in real time without network access.",
+        "Detects and covers people on your Mac's screen in real time, fully offline.",
       link: {
         label: "github.com",
         href: "https://github.com/haithamassoli/Sitr",
@@ -369,6 +361,7 @@ export const RESUME_DATA = {
     },
     {
       title: "EECommittee",
+      featured: true,
       techStack: [
         "React Native",
         "Expo",
@@ -386,6 +379,7 @@ export const RESUME_DATA = {
     },
     {
       title: "Azkari / Dhikr",
+      featured: true,
       techStack: ["JavaScript", "Swift", "SwiftUI", "Kotlin", "C#", "WPF"],
       description:
         "One remembrance, every so often, on whichever screen you are at.",
@@ -396,6 +390,7 @@ export const RESUME_DATA = {
     },
     {
       title: "Khatwa",
+      featured: true,
       techStack: [
         "Kotlin",
         "Jetpack Compose",
@@ -479,6 +474,7 @@ export const RESUME_DATA = {
     },
     {
       title: "Fazawwijuhu",
+      featured: true,
       techStack: [
         "Next.js 16",
         "React 19",
@@ -495,6 +491,7 @@ export const RESUME_DATA = {
     },
     {
       title: "Al-Tibyan Educational Center",
+      featured: true,
       techStack: [
         "React Native",
         "TypeScript",
@@ -621,6 +618,7 @@ export const RESUME_DATA = {
     },
     {
       title: "Sada",
+      featured: true,
       techStack: [
         "JavaScript",
         "Manifest V3",
@@ -630,7 +628,7 @@ export const RESUME_DATA = {
         "WASM",
       ],
       description:
-        "Built on-device English-to-Arabic subtitle translation with NLLB-200, transformers.js, WebGPU, and WASM.",
+        "Arabic subtitles for English YouTube, translated on your device.",
       link: {
         label: "github.com",
         href: "https://github.com/haithamassoli/sada",
@@ -654,6 +652,7 @@ export const RESUME_DATA = {
     },
     {
       title: "Ghadd",
+      featured: true,
       techStack: [
         "Kotlin",
         "Android Accessibility Service",
@@ -661,8 +660,7 @@ export const RESUME_DATA = {
         "NudeNet v3",
         "YOLOv8n",
       ],
-      description:
-        "Built system-wide on-device image filtering for Android using YOLOv8n, NudeNet, and ONNX Runtime.",
+      description: "System-wide on-device image filtering for Android.",
       link: {
         label: "github.com",
         href: "https://github.com/haithamassoli/haramblur",
@@ -670,6 +668,7 @@ export const RESUME_DATA = {
     },
     {
       title: "Horizon",
+      featured: true,
       techStack: [
         "Electron",
         "TypeScript",
@@ -679,7 +678,7 @@ export const RESUME_DATA = {
         "Native bridges",
       ],
       description:
-        "Built a cross-platform Electron desktop app with native bridges and presence-aware break reminders.",
+        "Eye breaks that know when you are actually at the computer.",
       link: {
         label: "github.com",
         href: "https://github.com/haithamassoli/horizon",
@@ -824,6 +823,7 @@ export const RESUME_DATA = {
     },
     {
       title: "cohere-transcribe",
+      featured: true,
       techStack: [
         "Python",
         "Silero VAD",
@@ -832,7 +832,7 @@ export const RESUME_DATA = {
         "Hugging Face",
       ],
       description:
-        "Built a GPU-batched Arabic and English transcription pipeline with Silero VAD and subtitle export.",
+        "High-throughput Arabic and English transcription with SRT and VTT export.",
       link: {
         label: "github.com",
         href: "https://github.com/AliOsm/cohere-transcribe",
