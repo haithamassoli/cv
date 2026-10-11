@@ -2,17 +2,14 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { CommandMenu } from "@/components/command-menu";
-import { Metadata } from "next";
 import { Section } from "@/components/ui/section";
 import { GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { RESUME_DATA } from "@/data/resume-data";
+import { RESUME_DATA, type Project } from "@/data/resume-data";
 import { ProjectCard } from "@/components/project-card";
+import { PrintButton } from "@/components/print-button";
 
-type Project = (typeof RESUME_DATA.projects)[number];
-
-const isFeatured = (project: Project) =>
-  "featured" in project && project.featured;
+const isFeatured = (project: Project) => project.featured === true;
 
 const displayUrl = (url: string) =>
   url.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "");
@@ -24,14 +21,49 @@ const PROJECTS = [
 ];
 const CV_HOST = displayUrl(RESUME_DATA.personalWebsiteUrl);
 
-export const metadata: Metadata = {
-  title: "Haitham Assoli | Software Engineer",
+const SECTIONS = [
+  { id: "summary", title: "Summary" },
+  { id: "experience", title: "Experience" },
+  { id: "skills", title: "Skills" },
+  { id: "education", title: "Education" },
+  { id: "certifications", title: "Training & Certifications" },
+  { id: "projects", title: "Projects" },
+];
+
+const PERSON_JSON_LD = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: RESUME_DATA.name,
+  jobTitle: "Software Engineer",
   description: RESUME_DATA.summary,
+  url: RESUME_DATA.personalWebsiteUrl,
+  image: new URL(RESUME_DATA.avatarUrl, RESUME_DATA.personalWebsiteUrl).href,
+  email: `mailto:${RESUME_DATA.contact.email}`,
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Amman",
+    addressCountry: "JO",
+  },
+  sameAs: [
+    RESUME_DATA.portfolioUrl,
+    ...RESUME_DATA.contact.social.map((social) => social.url),
+  ],
+  alumniOf: RESUME_DATA.education.map((education) => ({
+    "@type": "CollegeOrUniversity",
+    name: education.school,
+  })),
+  knowsAbout: RESUME_DATA.skills.flatMap((group) => group.items),
 };
 
 export default function Page() {
   return (
     <main className="container relative mx-auto scroll-my-12 overflow-auto p-4 md:p-16 print:px-10 print:py-0">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(PERSON_JSON_LD).replace(/</g, "\\u003c"),
+        }}
+      />
       <section className="mx-auto w-full max-w-2xl space-y-8 bg-white print:space-y-3">
         <div className="flex items-center justify-between">
           <div className="flex-1 space-y-1.5">
@@ -46,6 +78,7 @@ export default function Page() {
                 className="inline-flex gap-x-1.5 align-baseline leading-none hover:underline"
                 href={RESUME_DATA.locationLink}
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <GlobeIcon className="size-3" />
                 {RESUME_DATA.location}
@@ -70,6 +103,7 @@ export default function Page() {
                   aria-label="Portfolio"
                   href={RESUME_DATA.portfolioUrl}
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <GlobeIcon className="size-4" />
                 </a>
@@ -82,11 +116,17 @@ export default function Page() {
                   size="icon"
                   asChild
                 >
-                  <a aria-label={social.name} href={social.url} target="_blank">
+                  <a
+                    aria-label={social.name}
+                    href={social.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <social.icon className="size-4" />
                   </a>
                 </Button>
               ))}
+              <PrintButton />
             </div>
             <div className="hidden flex-wrap gap-x-2 font-mono text-muted-foreground print:flex print:text-[10px]">
               <a
@@ -115,14 +155,14 @@ export default function Page() {
           </Avatar>
         </div>
 
-        <Section>
+        <Section id="summary" className="scroll-mt-16">
           <h2 className="text-xl font-bold print:text-xl">Summary</h2>
           <p className="text-pretty font-mono text-sm text-muted-foreground print:text-[12px]">
             {RESUME_DATA.summary}
           </p>
         </Section>
 
-        <Section>
+        <Section id="experience" className="scroll-mt-16">
           <h2 className="text-xl font-bold print:text-xl">Experience</h2>
           {RESUME_DATA.work.map((work) => (
             <Card key={work.company}>
@@ -133,6 +173,7 @@ export default function Page() {
                       <a
                         className="hover:underline"
                         target="_blank"
+                        rel="noopener noreferrer"
                         href={work.link}
                       >
                         {work.company}
@@ -171,7 +212,7 @@ export default function Page() {
           ))}
         </Section>
 
-        <Section className="print:break-before-page">
+        <Section id="skills" className="scroll-mt-16 print:break-before-page">
           <h2 className="text-xl font-bold print:text-xl">Skills</h2>
           <div className="space-y-2 print:space-y-1">
             {RESUME_DATA.skills.map((group) => (
@@ -191,7 +232,7 @@ export default function Page() {
           </div>
         </Section>
 
-        <Section>
+        <Section id="education" className="scroll-mt-16">
           <h2 className="text-xl font-bold print:text-xl">Education</h2>
           {RESUME_DATA.education.map((education) => (
             <Card key={education.school}>
@@ -212,7 +253,7 @@ export default function Page() {
           ))}
         </Section>
 
-        <Section>
+        <Section id="certifications" className="scroll-mt-16">
           <h2 className="text-xl font-bold print:text-xl">
             Training &amp; Certifications
           </h2>
@@ -224,6 +265,7 @@ export default function Page() {
                     <a
                       className="hover:underline"
                       target="_blank"
+                      rel="noopener noreferrer"
                       href={certification.link}
                     >
                       {certification.title}
@@ -255,7 +297,10 @@ export default function Page() {
           ))}
         </Section>
 
-        <Section className="scroll-mb-16 print:break-before-page">
+        <Section
+          id="projects"
+          className="scroll-mb-16 scroll-mt-16 print:break-before-page"
+        >
           <h2 className="text-xl font-bold print:text-xl">
             <span className="print:hidden">Projects</span>
             <span className="hidden print:inline">Selected Projects</span>
@@ -268,7 +313,8 @@ export default function Page() {
                 description={project.description}
                 tags={project.techStack}
                 link={project.link.href}
-                source={"source" in project ? project.source : undefined}
+                source={project.source}
+                role={project.role}
                 className={
                   index >= FEATURED_PROJECTS.length ? "print:hidden" : undefined
                 }
@@ -285,6 +331,7 @@ export default function Page() {
       </section>
 
       <CommandMenu
+        sections={SECTIONS}
         links={[
           {
             url: RESUME_DATA.portfolioUrl,
